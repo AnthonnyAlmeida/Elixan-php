@@ -1,0 +1,16 @@
+/* ==========================
+   Classes globais de container e largura máxima
+   ========================== */
+/* Define o estilo geral para contêineres */
+.container,
+.about-full .container,
+.footer-container {
+  max-width: 1200px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  padding: 0 20px; /* Adiciona espaçamento interno nas laterais */
+}
+
+/* Ajusta o espaçamento interno do contêiner na seção "Sobre Nós" */
+.about-full .container {
+  padding: 0 16px; /* Reduz o espaçamento interno nas laterais */
+}

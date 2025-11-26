@@ -1,0 +1,93 @@
+/* ==========================
+   Listagem de Produtos
+   ========================== */
+/* Define o estilo geral da seção de listagem de produtos */
+.product-listing {
+  padding: 50px 20px; /* Adiciona espaçamento interno na seção */
+  text-align: center; /* Centraliza o conteúdo da seção */
+  background-color: #111111; /* Fundo preto suave */
+  color: #ffffff; /* Texto branco */
+}
+
+/* Estiliza o título da listagem de produtos */
+.product-listing h2 {
+  font-size: 28px; /* Define o tamanho da fonte do título */
+  margin-bottom: 30px; /* Adiciona espaçamento abaixo do título */
+  color: #53d68a; /* Verde claro para o título */
+}
+
+/* ==========================
+   Cartões de Produtos
+   ========================== */
+/* Estiliza o cartão de produto */
+.product-card {
+  background-color: #1a1a1a; /* Fundo cinza muito escuro */
+  color: #ffffff; /* Texto branco */
+  border: 1px solid #333333; /* Bordas cinza escuro */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  padding: 20px; /* Adiciona espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Efeito de elevação */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Sombra mais forte */
+}
+
+/* Estiliza a imagem do produto dentro do cartão */
+.product-card img.product-img {
+  width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 150px; /* Define uma largura máxima para a imagem */
+  margin-bottom: 15px; /* Adiciona espaçamento abaixo da imagem */
+  filter: brightness(0.9); /* Reduz o brilho para harmonizar com o tema escuro */
+}
+
+/* Estiliza o título do produto dentro do cartão */
+.product-card h3 {
+  font-size: 1.1rem; /* Define o tamanho da fonte do título */
+  margin-bottom: 10px; /* Adiciona espaçamento abaixo do título */
+  color: #ffffff; /* Texto branco */
+}
+
+/* Estiliza a descrição do produto */
+.product-card .product-description {
+  font-size: 0.9rem; /* Define o tamanho da fonte da descrição */
+  margin-bottom: 10px; /* Adiciona espaçamento abaixo da descrição */
+  text-align: center; /* Centraliza o texto da descrição */
+  color: #d8d8d8; /* Cinza claro para descrições */
+}
+
+/* Estiliza o preço e o tamanho do produto */
+.product-card .product-price,
+.product-card .product-size {
+  font-weight: bold; /* Deixa o texto em negrito */
+  margin-bottom: 10px; /* Adiciona espaçamento abaixo de cada elemento */
+  color: #ffffff; /* Texto branco */
+}
+
+/* Botões de compra */
+.product-card .buy-button {
+  background-color: #2a9d8f; /* Fundo verde-azulado */
+  color: #ffffff; /* Texto branco */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.product-card .buy-button:hover {
+  background-color: #21867a; /* Fundo mais escuro no hover */
+}
+
+/* Links */
+a {
+  color: #53d68a; /* Verde claro para links */
+  text-decoration: none; /* Remove sublinhado */
+  transition: color 0.3s ease; /* Transição suave */
+}
+
+a:hover {
+  color: #2f855a; /* Verde mais escuro no hover */
+}

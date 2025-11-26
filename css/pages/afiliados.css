@@ -1,0 +1,74 @@
+/* ==========================
+   Seção de Etapas (Steps)
+   ========================== */
+/* Define o estilo geral da seção de etapas */
+.steps-section {
+  background: #111111; /* Fundo preto suave */
+  padding: 60px 20px; /* Espaçamento interno (superior/inferior e laterais) */
+  text-align: center; /* Centraliza o texto */
+  color: #ffffff; /* Texto branco */
+}
+
+/* Estiliza o título da seção de etapas */
+.steps-section h2 {
+  font-size: 28px; /* Define o tamanho da fonte do título */
+  margin-bottom: 40px; /* Adiciona espaçamento abaixo do título */
+  color: #53d68a; /* Verde claro para o título */
+}
+
+/* ==========================
+   Container de Etapas
+   ========================== */
+/* Define o layout do container que agrupa os cartões de etapas */
+.steps-container {
+  display: flex; /* Usa flexbox para organizar os cartões */
+  justify-content: center; /* Centraliza os cartões horizontalmente */
+  gap: 30px; /* Define o espaçamento entre os cartões */
+  flex-wrap: wrap; /* Permite que os cartões quebrem linha em telas menores */
+  margin-bottom: 40px; /* Adiciona espaçamento inferior ao container */
+}
+
+/* ==========================
+   Cartões de Etapas
+   ========================== */
+/* Estiliza os cartões individuais de etapas */
+.step-card {
+  max-width: 300px; /* Define a largura máxima do cartão */
+  padding: 30px; /* Adiciona espaçamento interno ao cartão */
+  background-color: #1a1a1a; /* Fundo cinza muito escuro */
+  color: #ffffff; /* Texto branco */
+  border: 1px solid #333333; /* Bordas cinza escuro */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.step-card:hover {
+  transform: translateY(-5px); /* Efeito de elevação */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Sombra mais forte */
+}
+
+/* Estiliza os títulos dentro dos cartões */
+.step-card h3 {
+  font-size: 1.2rem; /* Define o tamanho da fonte do título */
+  margin-bottom: 15px; /* Adiciona espaçamento abaixo do título */
+  color: #ffffff; /* Texto branco */
+}
+
+/* Estiliza as descrições dentro dos cartões */
+.step-card p {
+  font-size: 0.9rem; /* Define o tamanho da fonte da descrição */
+  color: #d8d8d8; /* Cinza claro para descrições */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Links */
+a {
+  color: #53d68a; /* Verde claro para links */
+  text-decoration: none; /* Remove sublinhado */
+  transition: color 0.3s ease; /* Transição suave */
+}
+
+a:hover {
+  color: #2f855a; /* Verde mais escuro no hover */
+}

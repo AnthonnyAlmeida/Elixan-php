@@ -1,0 +1,55 @@
+/* ==========================
+   Estilo Geral dos Cartões
+   ========================== */
+/* Define o estilo geral para os cartões de benefícios, etapas e produtos */
+.benefit,
+.step-card,
+.product-card {
+  background: #fff; /* Fundo branco */
+  padding: 20px; /* Adiciona espaçamento interno */
+  border-radius: 8px 15px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+  transition: transform 0.3s ease; /* Transição suave para transformações */
+}
+
+/* Adiciona um efeito de elevação ao passar o mouse */
+.benefit:hover,
+.step-card:hover,
+.product-card:hover {
+  transform: translateY(-5px); /* Move o cartão 5px para cima */
+}
+
+/* ==========================
+   Ícones dos Benefícios
+   ========================== */
+/* Estiliza os ícones dentro dos cartões de benefícios */
+.icon {
+  width: 90px; /* Largura do ícone */
+  height: 90px; /* Altura do ícone */
+  background: rgba(83, 214, 138, 0.2); /* Fundo verde translúcido */
+  border-radius: 50%; /* Torna o fundo circular */
+  margin: 0 auto 20px; /* Centraliza o ícone e adiciona espaçamento inferior */
+  display: flex; /* Usa flexbox para alinhar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  font-size: 36px; /* Tamanho da fonte do ícone */
+  color: #53d68a; /* Cor do ícone */
+}
+
+/* ==========================
+   Ícones das Etapas
+   ========================== */
+/* Estiliza os ícones dentro dos cartões de etapas */
+.step-icon {
+  width: 50px; /* Largura do ícone */
+  height: 50px; /* Altura do ícone */
+  background: #2f855a; /* Fundo verde escuro */
+  color: white; /* Texto branco */
+  border-radius: 50%; /* Torna o fundo circular */
+  margin: 0 auto 20px; /* Centraliza o ícone e adiciona espaçamento inferior */
+  display: flex; /* Usa flexbox para alinhar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  font-size: 24px; /* Tamanho da fonte do ícone */
+  font-weight: bold; /* Negrito */
+}

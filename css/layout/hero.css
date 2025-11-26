@@ -1,0 +1,88 @@
+/* ==========================
+   Seção Principal do Hero
+   ========================== */
+.main-hero {
+  padding: calc(60px + 20px); /* Calcula o espaçamento interno */
+  background-color: #111; /* Fundo preto */
+  padding-top: 120px !important; /* Garante um espaçamento superior fixo */
+}
+
+.main-hero > *:first-child {
+  margin-top: 0 !important; /* Remove a margem superior do primeiro elemento */
+}
+
+/* ==========================
+   Container da Imagem do Hero
+   ========================== */
+.hero-image-container {
+  position: relative; /* Necessário para posicionar elementos filhos */
+  max-width: 1200px; /* Define a largura máxima do container */
+  height: 460px; /* Define a altura fixa */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  border-radius: 14px; /* Bordas arredondadas */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse o container */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); /* Adiciona sombra ao container */
+}
+
+/* ==========================
+   Imagem do Hero
+   ========================== */
+.hero-image {
+  width: 100%; /* Faz a imagem ocupar toda a largura do container */
+  height: 100%; /* Faz a imagem ocupar toda a altura do container */
+  object-fit: cover; /* Garante que a imagem preencha o container sem distorção */
+  object-position: 50% 90%; /* Posiciona o foco da imagem */
+  filter: brightness(0.78); /* Reduz o brilho da imagem */
+  transition: transform 1.2s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+
+.hero-image-container:hover .hero-image {
+  transform: scale(1.05); /* Aplica um leve zoom na imagem ao passar o mouse */
+}
+
+/* ==========================
+   Conteúdo do Hero
+   ========================== */
+.hero-content {
+  position: absolute; /* Posiciona o conteúdo sobre a imagem */
+  top: 0; /* Alinha o conteúdo ao topo do container */
+  left: 0; /* Alinha o conteúdo à esquerda do container */
+  width: 100%; /* Faz o conteúdo ocupar toda a largura */
+  height: 100%; /* Faz o conteúdo ocupar toda a altura */
+  display: flex; /* Usa flexbox para organizar os itens */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: flex-start; /* Alinha os itens ao topo */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center; /* Centraliza o texto */
+  padding: 140px 20px 20px; /* Adiciona espaçamento interno */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.65), /* Fundo mais escuro na parte superior */
+    rgba(0, 0, 0, 0.35)  /* Fundo mais claro na parte inferior */
+  );
+  color: white; /* Texto branco */
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto */
+}
+
+/* ==========================
+   Título do Hero
+   ========================== */
+.hero-content h1 {
+  font-size: 48px; /* Tamanho da fonte */
+  max-width: 900px; /* Define a largura máxima do título */
+  line-height: 1.2; /* Define a altura da linha */
+  font-weight: 700; /* Negrito */
+  margin: 0; /* Remove margens */
+}
+
+/* ==========================
+   Estilo Mobile
+   ========================== */
+@media (max-width: 768px) {
+  .hero-content {
+    padding-top: 100px; /* Reduz o espaçamento superior no celular */
+  }
+
+  .hero-content h1 {
+    font-size: 28px; /* Reduz o tamanho do título no celular */
+  }
+}

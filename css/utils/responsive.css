@@ -1,0 +1,130 @@
+/* ==========================
+   Estilos para telas menores (máximo de 768px)
+   ========================== */
+@media (max-width: 768px) {
+  /* ==========================
+     Cabeçalho e Navegação
+     ========================== */
+  .header {
+    padding: 15px 20px; /* Reduz o espaçamento interno do cabeçalho */
+  }
+
+  .nav {
+    order: 3; /* Altera a ordem do elemento no layout */
+    width: 100%; /* Faz a navegação ocupar 100% da largura */
+    margin-top: 10px; /* Adiciona espaçamento superior */
+    text-align: center; /* Centraliza os itens da navegação */
+  }
+
+  .nav a {
+    margin: 0 10px; /* Adiciona espaçamento horizontal entre os links */
+    padding: 5px; /* Reduz o espaçamento interno dos links */
+  }
+
+  .lang-select {
+    margin-left: 0; /* Remove o espaçamento à esquerda */
+  }
+
+  /* ==========================
+     Hero Section
+     ========================== */
+  .hero-content h1 {
+    font-size: 22px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .main-hero {
+    padding: 5px; /* Reduz o espaçamento interno */
+    padding-top: 90px !important; /* Garante espaçamento superior fixo */
+  }
+
+  .hero-image-container,
+  .hero-content,
+  .hero-image {
+    max-height: 250px; /* Define uma altura máxima para o hero */
+    height: 250px; /* Define uma altura fixa */
+  }
+
+  /* ==========================
+     Benefícios e Etapas
+     ========================== */
+  .benefits,
+  .steps-container {
+    flex-direction: column; /* Alinha os itens em coluna */
+    gap: 20px; /* Reduz o espaçamento entre os itens */
+  }
+
+  /* ==========================
+     Grade de Produtos
+     ========================== */
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Ajusta o número de colunas automaticamente */
+    gap: 20px; /* Reduz o espaçamento entre os itens */
+  }
+
+  /* ==========================
+     Imagens (Logo e Bandeiras)
+     ========================== */
+  .logo-img {
+    height: 30px; /* Reduz a altura da logo */
+  }
+
+  .flag-img {
+    height: 30px !important; /* Reduz a altura das bandeiras */
+    width: 30px !important; /* Reduz a largura das bandeiras */
+  }
+
+  /* ==========================
+     Seção Sobre Nós
+     ========================== */
+  .about-full {
+    padding: 2rem 0; /* Reduz o espaçamento interno */
+  }
+
+  .about-full h2 {
+    font-size: 1.6rem; /* Reduz o tamanho da fonte do título */
+  }
+
+  .about-full h3 {
+    font-size: 1.15rem; /* Reduz o tamanho da fonte dos subtítulos */
+    margin: 1.5rem 0 0.5rem; /* Ajusta o espaçamento ao redor dos subtítulos */
+  }
+
+  .about-lead,
+  .about-list {
+    max-width: 100%; /* Faz os elementos ocuparem 100% da largura */
+  }
+
+  .about-image-section {
+    grid-template-columns: 1fr; /* Alinha os elementos em uma única coluna */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .about-image-text {
+    margin-top: 1rem; /* Adiciona espaçamento superior */
+    text-align: center; /* Centraliza o texto */
+  }
+}
+
+/* ==========================
+   Ajustes de Responsividade para Páginas (Ex: Sobre Nós)
+   ========================== */
+
+@media (max-width: 768px) {
+    /* Ajustes específicos para a navegação interna da página Sobre Nós */
+    .internal-nav {
+        gap: 8px; /* Reduz o espaçamento entre botões */
+        padding: 10px 5px; /* Reduz o padding lateral */
+    }
+    
+    .internal-nav-btn {
+        /* Permite que o botão se expanda para preencher a linha, organizando-se em duas colunas. */
+        flex-grow: 1; 
+        min-width: 45%; /* Garante que os botões tenham largura suficiente */
+        padding: 8px 10px; /* Reduz o padding para telas menores */
+        font-size: 12px; /* Reduz a fonte para caber mais texto */
+    }
+
+    /* Você pode adicionar outros ajustes responsivos aqui, como:
+    .about-full { padding: 1.5rem 0.5rem; } 
+    */
+}

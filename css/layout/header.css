@@ -1,0 +1,171 @@
+/* ==========================
+   Estilo Geral do Cabeçalho
+   ========================== */
+/* Define o estilo geral do cabeçalho */
+.header {
+  position: fixed; /* Fixa o cabeçalho no topo da página */
+  top: 0; left: 0; right: 0; /* Faz o cabeçalho ocupar toda a largura */
+  width: 100%; /* Largura total */
+  background: rgba(0, 0, 0, 0.94); /* Fundo preto com transparência */
+  backdrop-filter: blur(12px); /* Aplica um efeito de desfoque no fundo */
+  -webkit-backdrop-filter: blur(12px); /* Suporte para navegadores WebKit */
+  z-index: 9999; /* Garante que o cabeçalho fique acima de outros elementos */
+  padding: 14px 20px; /* Espaçamento interno */
+  display: flex; /* Usa flexbox para organizar os itens */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Espaça os itens horizontalmente */
+  flex-wrap: wrap; /* Permite quebra de linha para itens em telas menores */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+}
+
+/* ==========================
+   Logo
+   ========================== */
+/* Define o estilo da logo */
+.logo {
+  display: flex; /* Usa flexbox para organizar os itens da logo */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 10px; /* Espaçamento entre os itens */
+}
+
+.logo-img { height: 42px; /* Define a altura da imagem da logo */ }
+.flag-img { height: 36px; /* Define a altura da imagem da bandeira */ }
+
+/* ==========================
+   Menu de Navegação (Desktop)
+   ========================== */
+/* Define o estilo do menu de navegação */
+.nav {
+  display: flex; /* Usa flexbox para organizar os links */
+  gap: 38px; /* Espaçamento entre os links */
+  align-items: center; /* Alinha os links verticalmente ao centro */
+}
+
+.nav a {
+  color: #e8e8e8; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 15px; /* Tamanho da fonte */
+  font-weight: 500; /* Peso da fonte */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  letter-spacing: 0.8px; /* Espaçamento entre letras */
+  position: relative; /* Necessário para o efeito de hover */
+  padding: 8px 0; /* Espaçamento interno */
+  transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+.nav a::after {
+  content: ''; /* Adiciona uma linha decorativa abaixo do link */
+  position: absolute;
+  width: 0; /* Inicialmente, a linha não é visível */
+  height: 2px; /* Altura da linha */
+  bottom: 0; /* Posiciona a linha na parte inferior do link */
+  left: 50%; /* Centraliza a linha */
+  background: #53d68a; /* Cor da linha */
+  transition: width 0.4s ease; /* Transição suave para a largura */
+  transform: translateX(-50%); /* Garante que a linha fique centralizada */
+}
+
+.nav a:hover::after,
+.nav a.active::after { width: 100%; /* Expande a linha ao passar o mouse ou no link ativo */ }
+
+.nav a:hover,
+.nav a.active { color: #ffffff; /* Muda a cor do texto para branco */ }
+
+/* ==========================
+   Botão Hambúrguer (Mobile)
+   ========================== */
+/* Define o estilo do botão hambúrguer */
+.menu-toggle {
+  display: none; /* Esconde o botão no desktop */
+  background: none; /* Remove o fundo */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Define o cursor como "mãozinha" */
+  padding: 10px; /* Espaçamento interno */
+  flex-direction: column; /* Organiza as barras em coluna */
+  gap: 6px; /* Espaçamento entre as barras */
+  width: 44px; /* Largura do botão */
+  height: 44px; /* Altura do botão */
+  justify-content: center; /* Centraliza as barras verticalmente */
+  align-items: center; /* Centraliza as barras horizontalmente */
+}
+
+.bar {
+  width: 28px; /* Largura da barra */
+  height: 3px; /* Altura da barra */
+  background: #fff; /* Cor da barra */
+  border-radius: 2px; /* Bordas arredondadas */
+  transition: all 0.3s ease; /* Transição suave para transformações */
+}
+
+/* Transforma o botão hambúrguer em "X" ao abrir o menu */
+.menu-toggle.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px); /* Rotaciona e desloca a barra */
+}
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0; /* Esconde a barra do meio */
+}
+.menu-toggle.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px); /* Rotaciona e desloca a barra */
+}
+
+/* ==========================
+   Seletor de Idioma
+   ========================== */
+/* Define o estilo do seletor de idioma */
+.lang-select {
+  background: #111; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  border: 1px solid #333; /* Borda cinza escura */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 8px 12px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho da fonte */
+  cursor: pointer; /* Define o cursor como "mãozinha" */
+}
+
+/* ==========================
+   Estilo Mobile
+   ========================== */
+@media (max-width: 880px) {
+  .menu-toggle {
+    display: flex; /* Mostra o botão hambúrguer no mobile */
+    order: 2; /* Altera a ordem do botão no layout */
+  }
+
+  .nav {
+    position: absolute; /* Posiciona o menu de navegação */
+    top: 100%; /* Coloca o menu abaixo do cabeçalho */
+    left: 0; /* Alinha o menu à esquerda */
+    width: 100%; /* Faz o menu ocupar toda a largura */
+    background: #0a0a0a; /* Fundo preto */
+    flex-direction: column; /* Organiza os links em coluna */
+    max-height: 0; /* Esconde o menu inicialmente */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite */
+    opacity: 0; /* Torna o menu invisível inicialmente */
+    transition: max-height 0.5s ease, opacity 0.4s ease; /* Transição suave */
+  }
+
+  .nav.open {
+    max-height: 600px; /* Mostra o menu ao abrir */
+    opacity: 1; /* Torna o menu visível */
+    border-top: 1px solid #222; /* Adiciona uma borda superior */
+  }
+
+  .nav a {
+    padding: 20px; /* Aumenta o espaçamento interno dos links */
+    text-align: center; /* Centraliza o texto */
+    font-size: 17px; /* Aumenta o tamanho da fonte */
+    border-bottom: 1px solid #1a1a1a; /* Adiciona uma borda inferior */
+  }
+
+  .nav a::after { display: none; /* Remove o efeito de linha decorativa */ }
+
+  .nav a:hover,
+  .nav a.active {
+    background: rgba(83, 214, 138, 0.15); /* Fundo verde translúcido ao passar o mouse ou no link ativo */
+  }
+
+  .lang-select {
+    order: 3; /* Altera a ordem do seletor de idioma no layout */
+    margin-top: 10px; /* Adiciona espaçamento superior */
+  }
+}

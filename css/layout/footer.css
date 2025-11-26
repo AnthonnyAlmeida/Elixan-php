@@ -1,0 +1,98 @@
+/* ==========================
+   Estilo Geral do Rodapé
+   ========================== */
+.footer {
+  /* Fundo cinza escuro mais elegante, não preto puro */
+  background: #1e1e1e;
+  color: #f0f0f0; 
+  padding: 60px 20px 30px; 
+  /* Remova o !important. Se houver margem superior, corrija no componente de cima. */
+  margin-top: 0;
+  width: 100%;
+  font-family: 'Arial', sans-serif; /* Ajuste para a fonte real do seu projeto */
+}
+
+/* ==========================
+   Container do Rodapé
+   ========================== */
+.footer-container {
+  display: grid;
+  /* Colunas responsivas, com mínimo de 240px */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px; 
+  max-width: 1200px; /* Limita a largura para melhor leitura */
+  margin: 0 auto; /* Centraliza */
+}
+
+/* ==========================
+   Colunas do Rodapé
+   ========================== */
+.footer-column h3 {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase; 
+}
+
+.footer-column ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+/* Estilização do texto (Endereço, etc.) */
+.footer-column p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #c0c0c0;
+}
+
+.footer-column a {
+  color: #a0a0a0; 
+  text-decoration: none; 
+  transition: color 0.3s ease; /* Transição suave para hover */
+}
+
+.footer-column a:hover {
+  color: #fff; 
+}
+
+/* ==========================
+   Logo do Rodapé
+   ========================== */
+.footer-logo {
+  width: 140px; 
+  margin-bottom: 15px; 
+}
+
+/* ==========================
+   Ícones Sociais
+   ========================== */
+.social-icons a {
+  color: #a0a0a0; 
+  margin-right: 15px; 
+  font-size: 1.5rem; 
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e6b800; /* Cor de destaque (mude para sua paleta de marca) */
+}
+
+/* ==========================
+   Rodapé Inferior
+   ========================== */
+.footer-bottom {
+  text-align: center; 
+  border-top: 1px solid #333333; 
+  margin-top: 40px; 
+  padding-top: 20px; 
+  font-size: 0.8rem; 
+  color: #888; 
+}

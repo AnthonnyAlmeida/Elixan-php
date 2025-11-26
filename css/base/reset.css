@@ -1,0 +1,34 @@
+/* ==========================
+   Reset Geral
+   ========================== */
+/* Remove margens, espaçamentos e define o box-sizing */
+* {
+  margin: 0; /* Remove todas as margens padrão */
+  padding: 0; /* Remove todos os espaçamentos internos padrão */
+  box-sizing: border-box; /* Inclui bordas e padding no cálculo do tamanho total */
+}
+
+/* ==========================
+   Comportamento do HTML
+   ========================== */
+/* Define o comportamento de rolagem suave */
+html {
+  scroll-behavior: smooth; /* Faz a rolagem da página ser suave */
+}
+
+/* ==========================
+   Comportamento do Body
+   ========================== */
+/* Remove margens e espaçamentos do corpo da página */
+body {
+  margin: 0 !important; /* Remove margens do body, com prioridade */
+  padding: 0 !important; /* Remove espaçamentos internos do body, com prioridade */
+}
+
+/* ==========================
+   Classe Utilitária
+   ========================== */
+/* Esconde elementos com a classe "hidden" */
+.hidden {
+  display: none; /* Define o elemento como não visível */
+}

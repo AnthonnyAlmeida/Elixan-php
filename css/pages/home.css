@@ -1,0 +1,148 @@
+/* ==========================
+   Estilos Gerais
+   ========================== */
+/* CORREÇÃO APLICADA: removido .benefits * */
+.introduction,
+.benefits {
+  background: #111 !important;
+  background-color: #111 !important;
+  color: #e5e5e5 !important;
+}
+
+/* ==========================
+   Seção de Benefícios
+   ========================== */
+.benefits {
+  background: #111 !important;
+  padding: 70px 20px 50px !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  text-align: center;
+}
+
+.benefit {
+  max-width: 280px;
+  flex: 1;
+  background: transparent !important;
+  padding: 20px;
+}
+
+.icon {
+  width: 90px;
+  height: 90px;
+  background: rgba(83, 214, 138, 0.2);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #53d68a;
+}
+
+.benefit h2 {
+  color: #53d68a !important;
+  font-size: 18px;
+  margin: 15px 0 8px;
+  font-weight: 600;
+}
+
+.benefit p {
+  color: #bbbbbb !important;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ==========================
+   Seção de Introdução
+   ========================== */
+.introduction {
+  background: #111 !important;
+  padding: 50px 20px 30px;
+  text-align: center;
+}
+
+.intro-content {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.15em;
+  line-height: 1.7;
+  color: #53d68a;
+  animation: fadeInIntro 1.2s ease forwards;
+}
+
+@keyframes fadeInIntro {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================
+   Estilo Premium da Home
+   ========================== */
+.introduction {
+  background: #111;
+  padding: 140px 20px 100px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.intro-content {
+  max-width: 820px;
+  margin: 0 auto;
+  font-size: 1.28rem;
+  color: #d8d8d8;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.intro-content h2 {
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 56px 0;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.intro-content p {
+  margin: 28px auto;
+  opacity: 0.88;
+  font-size: 1.28rem;
+}
+
+.intro-content p:nth-child(4),
+.intro-content p:nth-child(5) {
+  font-weight: 500;
+  color: #a8e6b8;
+  font-size: 1.38rem;
+  margin: 42px auto;
+}
+
+.intro-content p:last-of-type {
+  font-size: 1.48rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 80px auto 0;
+  padding-top: 60px;
+  border-top: 1px solid rgba(83, 214, 138, 0.25);
+  opacity: 1;
+}
+
+/* ==========================
+   Responsividade
+   ========================== */
+@media (max-width: 768px) {
+  .introduction { padding: 100px 20px 80px; }
+  .intro-content h2 { font-size: 2.6rem; }
+  .intro-content p { font-size: 1.18rem; }
+  .intro-content p:nth-child(4),
+  .intro-content p:nth-child(5) { font-size: 1.28rem; }
+  .intro-content p:last-of-type { 
+    font-size: 1.35rem;
+    margin-top: 60px;
+    padding-top: 40px;
+  }
+}

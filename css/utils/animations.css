@@ -1,0 +1,15 @@
+/* ==========================
+   Animação Fade Slide
+   ========================== */
+/* Define o estado inicial da animação */
+.fade-slide {
+  opacity: 0; /* Elemento começa invisível */
+  transform: translateY(20px); /* Elemento deslocado 20px para baixo */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave para opacidade e posição */
+}
+
+/* Define o estado final da animação quando a classe `.show` é adicionada */
+.fade-slide.show {
+  opacity: 1; /* Elemento se torna visível */
+  transform: translateY(0); /* Elemento retorna à posição original */
+}

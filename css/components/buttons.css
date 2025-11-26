@@ -1,0 +1,94 @@
+/* ==========================
+   Estilos Gerais para Botões
+   ========================== */
+/* Define estilos básicos compartilhados por vários botões */
+.cta-button,
+.scroll-button,
+.internal-nav-btn,
+.product-card .buy-button,
+.hero-content button {
+  cursor: pointer; /* Define o cursor como "mãozinha" ao passar o mouse */
+  font-weight: bold; /* Deixa o texto em negrito */
+  transition: all 0.3s ease; /* Adiciona uma transição suave para todas as propriedades */
+}
+
+/* ==========================
+   Botões de Chamada para Ação (CTA)
+   ========================== */
+/* Estiliza os botões de chamada para ação */
+.cta-button,
+.hero-content button {
+  background: #2f855a; /* Fundo verde */
+  color: white; /* Texto branco */
+  border: none; /* Remove a borda */
+  padding: 15px 30px; /* Adiciona espaçamento interno */
+  font-size: 18px; /* Define o tamanho da fonte */
+  border-radius: 30px; /* Bordas arredondadas */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+/* Estiliza os botões de chamada para ação ao passar o mouse */
+.cta-button:hover,
+.hero-content button:hover {
+  background: #276749; /* Escurece o fundo ao passar o mouse */
+}
+
+/* ==========================
+   Botão de Rolagem (Scroll Button)
+   ========================== */
+/* Estiliza o botão de rolagem */
+.scroll-button {
+  background: linear-gradient(90deg, #0b6b4e, #2f855a); /* Fundo com gradiente verde */
+  color: #fff; /* Texto branco */
+  border: none; /* Remove a borda */
+  padding: 14px 28px; /* Adiciona espaçamento interno */
+  font-size: 1.1rem; /* Define o tamanho da fonte */
+  border-radius: 50px; /* Bordas arredondadas */
+  display: inline-flex; /* Usa flexbox para alinhar o conteúdo */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 10px; /* Espaçamento entre os itens internos */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao botão */
+}
+
+/* Estiliza o botão de rolagem ao passar o mouse */
+.scroll-button:hover {
+  background: linear-gradient(90deg, #2f855a, #0b6b4e); /* Inverte o gradiente ao passar o mouse */
+  transform: scale(1.05); /* Aplica um leve zoom */
+}
+
+/* ==========================
+   Botões de Navegação Interna
+   ========================== */
+/* Estiliza os botões de navegação interna */
+.internal-nav-btn {
+  background: #2f855a; /* Fundo verde */
+  color: white; /* Texto branco */
+  border: none; /* Remove a borda */
+  padding: 10px 20px; /* Adiciona espaçamento interno */
+  font-size: 14px; /* Define o tamanho da fonte */
+  border-radius: 20px; /* Bordas arredondadas */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+/* Estiliza os botões de navegação interna ao passar o mouse */
+.internal-nav-btn:hover {
+  background: #276749; /* Escurece o fundo ao passar o mouse */
+  transform: scale(1.05); /* Aplica um leve zoom */
+}
+
+/* ==========================
+   Botão de Compra (Buy Button)
+   ========================== */
+/* Estiliza o botão de compra nos cartões de produto */
+.product-card .buy-button {
+  background-color: #2a9d8f; /* Fundo verde-azulado */
+  color: #fff; /* Texto branco */
+  padding: 10px 15px; /* Adiciona espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Estiliza o botão de compra ao passar o mouse */
+.product-card .buy-button:hover {
+  background-color: #21867a; /* Escurece o fundo ao passar o mouse */
+}

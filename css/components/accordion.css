@@ -1,0 +1,38 @@
+/* ==========================
+   Seção do Accordion
+   ========================== */
+/* Define o estilo geral da seção do accordion */
+.accordion-section {
+  border: 1px solid rgba(18, 40, 16, 0.06); /* Borda sutil ao redor da seção */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+  background: #fbfbfc; /* Fundo cinza claro */
+  transition: box-shadow 0.25s ease; /* Transição suave para a sombra */
+  margin: 20px auto; /* Adiciona espaçamento vertical e centraliza horizontalmente */
+}
+
+/* Adiciona sombra quando o accordion está aberto */
+.accordion-section.is-open {
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06); /* Sombra leve ao redor da seção */
+}
+
+/* ==========================
+   Conteúdo do Accordion
+   ========================== */
+/* Define o estilo do conteúdo do accordion (inicialmente fechado) */
+.accordion-content {
+  max-height: 0; /* Altura inicial é 0 (oculto) */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites */
+  padding: 0 18px; /* Espaçamento lateral */
+  transition: max-height 0.5s ease, padding 0.25s ease; /* Transição suave para altura e espaçamento */
+  background: linear-gradient(180deg, #1a1a1a, #2a2a2a); /* Degradê de cinza escuro para cinza médio */
+  color: #ffffff; /* Texto branco */
+  font-size: 1.25rem; /* Tamanho da fonte */
+  line-height: 1.75; /* Altura da linha */
+}
+
+/* Define o estilo do conteúdo quando o accordion está aberto */
+.accordion-section.is-open .accordion-content {
+  padding: 25px; /* Adiciona espaçamento interno */
+  max-height: 1000px; /* Define uma altura suficiente para exibir o conteúdo */
+}

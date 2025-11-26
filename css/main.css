@@ -1,0 +1,54 @@
+/* ==========================
+   Aviso
+   ========================== */
+/* css/main.css - NUNCA EDITE AQUI DIRETO */
+/* Este arquivo serve apenas para importar e organizar os outros arquivos CSS. */
+
+/* ==========================
+   Base
+   ========================== */
+/* Importa os estilos básicos e globais */
+@import 'base/reset.css'; /* Reseta os estilos padrão dos navegadores */
+@import 'base/variables.css'; /* Define variáveis globais (cores, fontes, etc.) */
+@import 'base/typography.css'; /* Define estilos globais de tipografia */
+
+/* ==========================
+   Layout
+   ========================== */
+/* Importa os estilos relacionados ao layout geral */
+@import 'layout/containers.css'; /* Define os contêineres principais */
+@import 'layout/grid.css'; /* Define o sistema de grid */
+@import 'layout/header.css'; /* Estiliza o cabeçalho */
+@import 'layout/hero.css'; /* Estiliza a seção hero */
+@import 'layout/footer.css'; /* Estiliza o rodapé */
+
+/* ==========================
+   Componentes
+   ========================== */
+/* Importa os estilos dos componentes reutilizáveis */
+@import 'components/buttons.css'; /* Estiliza os botões */
+@import 'components/cards.css'; /* Estiliza os cartões */
+@import 'components/modal.css'; /* Estiliza os modais */
+@import 'components/accordion.css'; /* Estiliza os acordes (accordion) */
+
+/* ==========================
+   Utilitários
+   ========================== */
+/* Importa estilos utilitários e animações */
+@import 'utils/helper.css'; /* Define classes utilitárias */
+@import 'utils/animations.css'; /* Define animações globais */
+
+/* ==========================
+   Páginas
+   ========================== */
+/* Importa os estilos específicos de cada página */
+@import 'pages/home.css'; /* Estilos da página inicial */
+@import 'pages/produtos.css'; /* Estilos da página de produtos */
+@import 'pages/afiliados.css'; /* Estilos da página de afiliados */
+@import 'pages/sobre.css'; /* Estilos da página sobre nós */
+
+/* ==========================
+   Responsividade
+   ========================== */
+/* Importa os estilos responsivos (sempre por último) */
+@import 'utils/responsive.css'; /* Define ajustes para telas menores */

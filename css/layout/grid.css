@@ -1,0 +1,24 @@
+/* ==========================
+   Grade de Produtos
+   ========================== */
+/* Define o layout da grade de produtos */
+.product-grid {
+  display: grid; /* Usa grid layout para organizar os itens */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Cria colunas responsivas com largura mínima de 220px */
+  gap: 30px; /* Define o espaçamento entre os itens */
+  margin-top: 30px; /* Adiciona espaçamento superior à grade */
+}
+
+/* ==========================
+   Seção de Imagens (Sobre Nós)
+   ========================== */
+/* Define o layout da seção de imagens na página "Sobre Nós" */
+.about-image-section {
+  display: grid; /* Usa grid layout para organizar os itens */
+  grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanhos iguais */
+  gap: 20px; /* Define o espaçamento entre os itens */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 2rem 1rem; /* Adiciona espaçamento interno (superior/inferior e laterais) */
+  max-width: 960px; /* Define a largura máxima da seção */
+  margin: 0 auto; /* Centraliza a seção horizontalmente */
+}

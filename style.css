@@ -1,0 +1,13 @@
+/*
+Theme Name: Elixan Theme
+Theme URI: http://localhost/elixan-wp/
+Author: Anthonny Santana
+Author URI: #
+Description: Tema personalizado Elixan, usando WordPress + WooCommerce backend.
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: elixan-theme
+*/
+
+/* Importa todos os estilos do tema */
+@import 'css/main.css';
