@@ -1,5 +1,6 @@
 {
   "nav_home": "Pradžia",
+  "nav_shop": "Shop",
   "nav_products": "Produktai",
   "nav_about": "Apie mus",
   "nav_affiliate": "Partnerių programa",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Partnerių programa",
   "footer_social_title": "Sek mus",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Visos teisės saugomos."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Visos teisės saugomos.",
+  "shop_banner_title": "100% GRYNI, NATŪRALŪS ETERINIAI ALIEJAI",
+  "shop_banner_subtitle": "Atraskite mūsų kolekciją ir raskite tobulą aromą gerovei ir pusiausvyrai."
 }

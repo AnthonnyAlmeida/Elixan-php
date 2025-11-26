@@ -1,5 +1,6 @@
 {
   "nav_home": "Dar",
+  "nav_shop": "Shop",
   "nav_products": "Prodotti",
   "nav_about": "Dwarna",
   "nav_affiliate": "Programm ta 'affiljat",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Programm ta' affiljat",
   "footer_social_title": "Segwina",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Id-drittijiet kollha riżervati."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Id-drittijiet kollha riżervati.",
+  "shop_banner_title": "ŻJUT ESSENZJALI 100% PURI U NATURALI",
+  "shop_banner_subtitle": "Skopri l-kollezzjoni tagħna u sib l-aroma perfetta tiegħek għall-benesseri u l-bilanċ."
 }

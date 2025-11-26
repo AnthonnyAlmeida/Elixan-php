@@ -21,7 +21,6 @@
 
   <nav class="nav">
     <a href="<?php echo home_url(); ?>" class="<?php echo is_front_page() ? 'active' : ''; ?>" data-key="nav_home">Home</a>
-    <a href="<?php echo home_url('/shop'); ?>" class="<?php echo (is_page('shop') || is_shop()) ? 'active' : ''; ?>" data-key="nav_shop">Shop</a>
     <a href="<?php echo home_url('/sobre-nos'); ?>" class="<?php echo is_page('sobre-nos') ? 'active' : ''; ?>" data-key="nav_about">Über uns</a>
     <a href="<?php echo home_url('/afiliados'); ?>" class="<?php echo is_page('afiliados') ? 'active' : ''; ?>" data-key="nav_affiliate">Affiliate</a>
   </nav>
@@ -51,14 +50,4 @@
     <option value="hr">🇭🇷 Hrvatski</option>
     <option value="no">🇳🇴 Norsk</option>
   </select>
-
-  <!-- Carrinho WooCommerce -->
-  <?php if (class_exists('WooCommerce')) : ?>
-  <a href="<?php echo wc_get_cart_url(); ?>" class="cart-icon">
-    <i class="fas fa-shopping-cart"></i>
-    <?php if (WC()->cart->get_cart_contents_count() > 0) : ?>
-    <span class="cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-    <?php endif; ?>
-  </a>
-  <?php endif; ?>
 </header>

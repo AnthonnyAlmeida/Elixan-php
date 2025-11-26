@@ -1,5 +1,6 @@
 {
   "nav_home": "Σπίτι",
+  "nav_shop": "Shop",
   "nav_products": "Προϊόντα",
   "nav_about": "Σχετικά με εμάς",
   "nav_affiliate": "Πρόγραμμα συνεργατών",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Πρόγραμμα συνεργατών",
   "footer_social_title": "Ακολουθήστε μας",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Με την επιφύλαξη παντός δικαιώματος."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Με την επιφύλαξη παντός δικαιώματος.",
+  "shop_banner_title": "100% ΚΑΘΑΡΑ, ΦΥΣΙΚΑ ΑΙΘΕΡΙΑ ΕΛΑΙΑ",
+  "shop_banner_subtitle": "Ανακαλύψτε τη συλλογή μας και βρείτε το τέλειο άρωμά σας για ευεξία και ισορροπία."
 }

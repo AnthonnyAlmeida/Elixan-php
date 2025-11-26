@@ -3,7 +3,7 @@
 <!-- HERO -->
 <section class="main-hero">
   <div class="hero-image-container">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/produto_neve.png" alt="Elixan ätherische Öle" class="hero-image" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/produto_neve.png" alt="Elixan" class="hero-image" />
     <div class="hero-content">
       <h1 data-key="home_banner_title">ENTDECKE DIE KRAFT DER ÄTHERISCHEN ÖLE</h1>
     </div>
@@ -14,12 +14,12 @@
 <section class="introduction">
   <div class="intro-content">
     <h2 data-key="home_intro_title">Werden Sie Elixan-Partner – Schweizer Qualität, Ihre finanzielle Freiheit</h2>
-    <p data-key="home_intro_p1"></p>
-    <p data-key="home_intro_p2"></p>
-    <p data-key="home_intro_p3"></p>
-    <p class="highlight" data-key="home_intro_p4"></p>
-    <p class="highlight" data-key="home_intro_p5"></p>
-    <p class="cta-final" data-key="home_intro_p6"></p>
+    <p data-key="home_intro_p1">Elixan kombiniert Wohlbefinden, Sinn und finanzielle Unabhängigkeit durch Aromatherapie.</p>
+    <p data-key="home_intro_p2">Ätherische Öle sind kraftvolle Begleiter für mehr Balance, Energie und Lebensqualität.</p>
+    <p data-key="home_intro_p3">Mit Elixan kannst du nicht nur deine Gesundheit unterstützen, sondern auch ein flexibles Einkommen aufbauen.</p>
+    <p class="highlight" data-key="home_intro_p4">💼 Werde Teil eines wachsenden Netzwerks und profitiere von attraktiven Provisionen.</p>
+    <p class="highlight" data-key="home_intro_p5">🌍 Arbeite ortsunabhängig und gestalte deine Zeit frei.</p>
+    <p class="cta-final" data-key="home_intro_p6">Starte noch heute – für mehr Gesundheit, Freiheit und Erfolg!</p>
   </div>
 </section>
 

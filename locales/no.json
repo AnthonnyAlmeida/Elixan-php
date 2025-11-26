@@ -1,5 +1,6 @@
 {
   "nav_home": "Hjem",
+  "nav_shop": "Shop",
   "nav_products": "Produkter",
   "nav_about": "Om oss",
   "nav_affiliate": "Affiliate program",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Avfiliate program",
   "footer_social_title": "Følg oss",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Alle rettigheter forbeholdt."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Alle rettigheter forbeholdt.",
+  "shop_banner_title": "100% RENE, NATURLIGE ESSENSIELLE OLJER",
+  "shop_banner_subtitle": "Oppdag vår samling og finn din perfekte duft for velvære og balanse."
 }

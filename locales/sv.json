@@ -1,5 +1,6 @@
 {
   "nav_home": "Hem",
+  "nav_shop": "Shop",
   "nav_products": "Produkter",
   "nav_about": "Om oss",
   "nav_affiliate": "Affiliate program",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Affiliate-program",
   "footer_social_title": "Följ oss",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Alla rättigheter reserverade."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Alla rättigheter reserverade.",
+  "shop_banner_title": "100% RENA, NATURLIGA ETERISKA OLJOR",
+  "shop_banner_subtitle": "Upptäck vår kollektion och hitta din perfekta doft för välbefinnande och balans."
 }

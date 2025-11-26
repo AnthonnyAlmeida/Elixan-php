@@ -1,5 +1,6 @@
 {
   "nav_home": "Dom",
+  "nav_shop": "Shop",
   "nav_products": "Produkty",
   "nav_about": "O nas",
   "nav_affiliate": "Program partnerski",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Program partnerski",
   "footer_social_title": "Śledź nas",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Wszelkie prawa zastrzeżone."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Wszelkie prawa zastrzeżone.",
+  "shop_banner_title": "100% CZYSTE, NATURALNE OLEJKI ETERYCZNE",
+  "shop_banner_subtitle": "Odkryj naszą kolekcję i znajdź swój idealny zapach dla dobrego samopoczucia i równowagi."
 }

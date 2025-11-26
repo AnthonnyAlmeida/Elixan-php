@@ -1,5 +1,6 @@
 {
   "nav_home": "Начало",
+  "nav_shop": "Shop",
   "nav_products": "Продукти",
   "nav_about": "За нас",
   "nav_affiliate": "Партньорска програма",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Партньорска програма",
   "footer_social_title": "Следвайте ни",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Всички права запазени."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Всички права запазени.",
+  "shop_banner_title": "100% ЧИСТИ, НАТУРАЛНИ ЕТЕРИЧНИ МАСЛА",
+  "shop_banner_subtitle": "Открийте нашата колекция и намерете вашия перфектен аромат за благополучие и баланс."
 }

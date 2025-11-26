@@ -29,8 +29,6 @@
       } else {
         el.textContent = translation;
       }
-
-      console.log(`[translate.js] aplicado ${lang}: ${key} -> ${translation}`);
     });
   }
 
@@ -41,17 +39,14 @@
     try {
       // Usando variável global do WordPress
       const url = `${ElixanLocales.path}${lang}.json?v=${Date.now()}`;
-      console.log('[translate.js] carregando:', url);
 
       const response = await fetch(url);
-      console.log('[translate.js] status:', response.status);
 
       if (!response.ok) {
         throw new Error(`Erro ao carregar o arquivo de tradução: ${lang}.json`);
       }
 
       const data = await response.json();
-      console.log('[translate.js] chaves carregadas:', Object.keys(data).length);
 
       // Atualiza recursos no i18next
       i18next.addResourceBundle(lang, 'translation', data, true, true);
@@ -67,5 +62,8 @@
 
   // Expõe função globalmente para outros scripts
   window.applyTranslations = applyTranslations;
+
+  // DESABILITADO: MutationObserver causava loop infinito e travava o navegador
+  // As traduções são aplicadas apenas quando o idioma é alterado manualmente
 
 })();

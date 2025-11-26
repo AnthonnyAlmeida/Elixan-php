@@ -1,5 +1,6 @@
 {
   "nav_home": "Otthon",
+  "nav_shop": "Shop",
   "nav_products": "Termékek",
   "nav_about": "Rólunk",
   "nav_affiliate": "Társprogram",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Partnerprogram",
   "footer_social_title": "Kövessen minket",
   "footer_facebook": "Facebook",
-  "footer_rights": "|© 2025 Elixan Aromatica GmbH. Minden jog fenntartva."
+  "footer_rights": "|© 2025 Elixan Aromatica GmbH. Minden jog fenntartva.",
+  "shop_banner_title": "100% TISZTA, TERMÉSZETES ILLÓOLAJOK",
+  "shop_banner_subtitle": "Fedezze fel kollekciónkat és találja meg tökéletes aromáját a jólléthez és egyensúlyhoz."
 }

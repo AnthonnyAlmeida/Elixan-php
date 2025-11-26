@@ -12,8 +12,8 @@
             <h3 data-key="footer_links_title">Links</h3>
             <ul>
                 <li><a href="<?php echo home_url(); ?>" data-key="footer_link_home">Home</a></li>
-                <li><a href="<?php echo home_url('/produtos'); ?>" data-key="footer_link_products">Produkte</a></li>
-                <li><a href="<?php echo home_url('/sobre_nos'); ?>" data-key="footer_link_about">Über uns</a></li>
+                <li><a href="<?php echo home_url('/shop'); ?>" data-key="footer_link_products">Produkte</a></li>
+                <li><a href="<?php echo home_url('/sobre-nos'); ?>" data-key="footer_link_about">Über uns</a></li>
                 <li><a href="<?php echo home_url('/afiliados'); ?>" data-key="footer_link_affiliate">Affiliate Programm</a></li>
             </ul>
         </div>

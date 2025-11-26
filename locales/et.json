@@ -1,5 +1,6 @@
 {
   "nav_home": "Kodu",
+  "nav_shop": "Shop",
   "nav_products": "Tooted",
   "nav_about": "Meie kohta",
   "nav_affiliate": "Sidusprogramm",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Sidusprogramm",
   "footer_social_title": "Jälgi meid",
   "footer_facebook": "Facebook",
-  "footer_rights": "|© 2025 Elixan Aromatica GmbH. Kõik õigused kaitstud."
+  "footer_rights": "|© 2025 Elixan Aromatica GmbH. Kõik õigused kaitstud.",
+  "shop_banner_title": "100% PUHAST, LOODUSLIKUD EETERLIKUD ÕLID",
+  "shop_banner_subtitle": "Avastage meie kollektsioon ja leidke oma täiuslik lõhn heaolu ja tasakaalu jaoks."
 }

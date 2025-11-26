@@ -1,5 +1,6 @@
 {
   "nav_home": "Domov",
+  "nav_shop": "Shop",
   "nav_products": "Produkty",
   "nav_about": "O nás",
   "nav_affiliate": "Affiliate program",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Affiliate program",
   "footer_social_title": "Sledujte nás",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Všetky práva vyhradené."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Všetky práva vyhradené.",
+  "shop_banner_title": "100% ČISTÉ, PRÍRODNÉ ÉTERICKÉ OLEJE",
+  "shop_banner_subtitle": "Objavte našu kolekciu a nájdite svoju dokonalú vôňu pre pohodu a rovnováhu."
 }

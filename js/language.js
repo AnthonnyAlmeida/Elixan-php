@@ -4,11 +4,8 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     
-    console.log("[language.js] Iniciando sistema de tradução...");
-
     const seletor = document.getElementById('language-selector');
     if (!seletor) {
-      console.error("[language.js] Seletor de idioma não encontrado.");
       return;
     }
 

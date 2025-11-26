@@ -1,5 +1,6 @@
 {
   "nav_home": "Sākums",
+  "nav_shop": "Shop",
   "nav_products": "Produkti",
   "nav_about": "Par mums",
   "nav_affiliate": "Saistītā programma",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Saistītā programma",
   "footer_social_title": "Sekojiet mums",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Visas tiesības paturētas."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Visas tiesības paturētas.",
+  "shop_banner_title": "100% TĪRAS, DABĪGAS ĒTERISKĀS EĻĻAS",
+  "shop_banner_subtitle": "Atklājiet mūsu kolekciju un atrodiet savu ideālo aromātu labsajūtai un līdzsvaram."
 }

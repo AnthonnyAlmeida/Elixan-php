@@ -1,5 +1,6 @@
 {
   "nav_home": "Acasă",
+  "nav_shop": "Shop",
   "nav_products": "Produse",
   "nav_about": "Despre noi",
   "nav_affiliate": "Program de afiliere",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Program de afiliere",
   "footer_social_title": "Urmărește-ne",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Toate drepturile rezervate."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Toate drepturile rezervate.",
+  "shop_banner_title": "ULEIURI ESENȚIALE 100% PURE ȘI NATURALE",
+  "shop_banner_subtitle": "Descoperă colecția noastră și găsește aroma ta perfectă pentru bunăstare și echilibru."
 }

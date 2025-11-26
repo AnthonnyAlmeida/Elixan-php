@@ -1,5 +1,6 @@
 {
   "nav_home": "Kotiin",
+  "nav_shop": "Shop",
   "nav_products": "Tuotteet",
   "nav_about": "Tietoja meistä",
   "nav_affiliate": "Yhteistyöohjelma",
@@ -113,5 +114,7 @@
   "footer_link_affiliate": "Kumppanuusohjelma",
   "footer_social_title": "Seuraa meitä",
   "footer_facebook": "Facebook",
-  "footer_rights": "© 2025 Elixan Aromatica GmbH. Kaikki oikeudet pidätetään."
+  "footer_rights": "© 2025 Elixan Aromatica GmbH. Kaikki oikeudet pidätetään.",
+  "shop_banner_title": "100% PUHTAAT, LUONNOLLISET ETERISET ÖLJYT",
+  "shop_banner_subtitle": "Tutustu kokoelmaamme ja löydä täydellinen tuoksu hyvinvointiin ja tasapainoon."
 }
