@@ -175,7 +175,10 @@
   <div class="logo">
     <a href="<?php echo home_url(); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/logo-elixan2.svg" alt="Elixan" class="logo-img" />
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/bandeira_suica.png" alt="Schweiz" class="flag-img" />
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/bandeira_suica.webp" type="image/webp">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/bandeira_suica.png" alt="Schweiz" class="flag-img" />
+      </picture>
     </a>
   </div>
 

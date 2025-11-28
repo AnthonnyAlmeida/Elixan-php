@@ -3,7 +3,10 @@
 <!-- HERO -->
 <section class="main-hero">
   <div class="hero-image-container">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/produto_neve.png" alt="Elixan ätherische Öle Produktbild" class="hero-image" loading="eager" width="1920" height="1080" />
+    <picture>
+      <source srcset="<?php echo get_template_directory_uri(); ?>/assets/produto_neve.webp" type="image/webp">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/produto_neve.png" alt="Elixan ätherische Öle Produktbild" class="hero-image" loading="eager" width="1920" height="1080" />
+    </picture>
     <div class="hero-content">
       <h1 data-key="home_banner_title">ENTDECKE DIE KRAFT DER ÄTHERISCHEN ÖLE</h1>
     </div>

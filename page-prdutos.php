@@ -8,7 +8,10 @@ get_header();
 <!-- BANNER PRINCIPAL -->
 <section class="main-hero">
   <div class="hero-image-container">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/banner_produtos.png" alt="Coleção de óleos essenciais Elixan" class="hero-image" />
+    <picture>
+      <source srcset="<?php echo get_template_directory_uri(); ?>/assets/banner_produtos.webp" type="image/webp">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/banner_produtos.png" alt="Coleção de óleos essenciais Elixan" class="hero-image" loading="lazy" />
+    </picture>
     <div class="hero-content">
       <h1 data-key="products_banner_title">100% REINE, NATÜRLICHE ÄTHERISCHE ÖLE</h1>
       <p data-key="products_banner_subtitle">
