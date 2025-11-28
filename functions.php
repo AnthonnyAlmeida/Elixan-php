@@ -6,8 +6,9 @@ add_filter('action_scheduler_queue_runner_batch_size', '__return_zero');
 add_filter('action_scheduler_queue_runner_concurrent_batches', '__return_zero');
 
 function elixan_theme_scripts() {
-    // CSS
-    wp_enqueue_style('main-css', get_template_directory_uri() . '/css/main.css', array(), time());
+    // CSS Principal (style.css importa main.css automaticamente)
+    // Versão com timestamp para quebrar cache DEFINITIVAMENTE
+    wp_enqueue_style('elixan-style', get_stylesheet_uri(), array(), '6.0.0.' . time());
     
     // WooCommerce CSS (apenas nas páginas da loja)
     if (class_exists('WooCommerce') && (is_woocommerce() || is_cart() || is_checkout() || is_account_page())) {
@@ -20,6 +21,17 @@ function elixan_theme_scripts() {
     
     // Adiciona inline script para garantir THEME_PATH
     wp_add_inline_script('simple-translate', 'window.THEME_PATH = "' . get_template_directory_uri() . '";', 'before');
+    
+    // Menu Mobile (hambúrguer)
+    wp_enqueue_script('menu-mobile', get_template_directory_uri() . '/js/menu-mobile.js', array(), time(), true);
+    
+    // Modal (página de afiliados)
+    wp_enqueue_script('modal', get_template_directory_uri() . '/js/modal.js', array(), time(), true);
+    
+    // Accordion (se usado em alguma página)
+    if (is_page('sobre-nos') || is_page('afiliados')) {
+        wp_enqueue_script('accordion', get_template_directory_uri() . '/js/accordion.js', array(), time(), true);
+    }
 }
 add_action('wp_enqueue_scripts', 'elixan_theme_scripts');
 

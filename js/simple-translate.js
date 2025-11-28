@@ -10,10 +10,12 @@
     if (!translations[currentLang]) return;
     
     const data = translations[currentLang];
-    const elements = document.querySelectorAll('[data-key]');
+    
+    // Busca elementos com data-key OU data-translate
+    const elements = document.querySelectorAll('[data-key], [data-translate]');
     
     elements.forEach(el => {
-      const key = el.getAttribute('data-key');
+      const key = el.getAttribute('data-key') || el.getAttribute('data-translate');
       if (data[key]) {
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
           el.placeholder = data[key];
@@ -58,7 +60,7 @@
 
   // Inicialização
   document.addEventListener('DOMContentLoaded', () => {
-    const selector = document.getElementById('language-selector');
+    const selector = document.getElementById('languageSelect');
     if (!selector) return;
 
     const savedLang = localStorage.getItem('idioma') || 'de';
@@ -75,7 +77,9 @@
     });
 
     selector.addEventListener('change', (e) => {
-      loadTranslation(e.target.value).then(() => {
+      const newLang = e.target.value;
+      loadTranslation(newLang).then(() => {
+        localStorage.setItem('idioma', newLang); // Garante que salva
         forceApply();
       });
     });
@@ -83,10 +87,17 @@
 
   // Também aplica quando a página carrega completamente
   window.addEventListener('load', () => {
+    const selector = document.getElementById('language-selector');
+    if (selector) {
+      const savedLang = localStorage.getItem('idioma') || 'de';
+      selector.value = savedLang; // Re-aplica o valor salvo
+    }
+    
     if (translations[currentLang]) {
       forceApply();
     } else {
-      loadTranslation(currentLang).then(() => forceApply());
+      const savedLang = localStorage.getItem('idioma') || 'de';
+      loadTranslation(savedLang).then(() => forceApply());
     }
   });
 

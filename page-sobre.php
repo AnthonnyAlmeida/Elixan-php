@@ -8,7 +8,7 @@ get_header();
 <!-- HERO -->
 <section class="main-hero">
   <div class="hero-image-container">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/aboutus.png" alt="Sobre Nós Banner" class="hero-image" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/aboutus.png" alt="Über Elixan Aromatica - Schweizer Qualität seit über 20 Jahren" class="hero-image" loading="eager" width="1920" height="600" />
     <div class="hero-content">
       <h1 data-key="about_banner_title">Über Elixan Aromatica</h1>
     </div>

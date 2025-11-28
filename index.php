@@ -3,7 +3,7 @@
 <!-- HERO -->
 <section class="main-hero">
   <div class="hero-image-container">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/produto_neve.png" alt="Elixan" class="hero-image" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/produto_neve.png" alt="Elixan ätherische Öle Produktbild" class="hero-image" loading="eager" width="1920" height="1080" />
     <div class="hero-content">
       <h1 data-key="home_banner_title">ENTDECKE DIE KRAFT DER ÄTHERISCHEN ÖLE</h1>
     </div>

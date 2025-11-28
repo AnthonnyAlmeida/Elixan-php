@@ -2,9 +2,10 @@
    Seção Principal do Hero
    ========================== */
 .main-hero {
-  padding: calc(60px + 20px); /* Calcula o espaçamento interno */
+  padding: 0; /* Remove padding */
+  margin-top: 70px; /* Espaço para o header fixo (altura do header) */
   background-color: #111; /* Fundo preto */
-  padding-top: 120px !important; /* Garante um espaçamento superior fixo */
+  position: relative; /* Para o header ficar por cima */
 }
 
 .main-hero > *:first-child {
@@ -16,12 +17,14 @@
    ========================== */
 .hero-image-container {
   position: relative; /* Necessário para posicionar elementos filhos */
-  max-width: 1200px; /* Define a largura máxima do container */
-  height: 460px; /* Define a altura fixa */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  border-radius: 14px; /* Bordas arredondadas */
+  width: 100%; /* Full width - de ponta a ponta */
+  max-width: 100%; /* Remove limite de largura */
+  height: 100vh; /* Altura total da tela */
+  min-height: 600px; /* Altura mínima */
+  margin: 0; /* Remove margem */
+  border-radius: 0; /* Remove bordas arredondadas */
   overflow: hidden; /* Garante que o conteúdo não ultrapasse o container */
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); /* Adiciona sombra ao container */
+  box-shadow: none; /* Remove sombra */
 }
 
 /* ==========================
@@ -51,35 +54,41 @@
   height: 100%; /* Faz o conteúdo ocupar toda a altura */
   display: flex; /* Usa flexbox para organizar os itens */
   flex-direction: column; /* Organiza os itens em coluna */
-  justify-content: flex-start; /* Alinha os itens ao topo */
+  justify-content: center; /* Centraliza verticalmente */
   align-items: center; /* Centraliza os itens horizontalmente */
   text-align: center; /* Centraliza o texto */
-  padding: 140px 20px 20px; /* Adiciona espaçamento interno */
+  padding: 80px 40px 40px; /* Espaçamento para não encostar no header */
   background: linear-gradient(
-    rgba(0, 0, 0, 0.65), /* Fundo mais escuro na parte superior */
-    rgba(0, 0, 0, 0.35)  /* Fundo mais claro na parte inferior */
+    rgba(0, 0, 0, 0.5), /* Fundo mais transparente no topo */
+    rgba(0, 0, 0, 0.3)  /* Fundo bem transparente embaixo */
   );
   color: white; /* Texto branco */
-  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto */
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.9); /* Sombra mais forte */
 }
 
 /* ==========================
    Título do Hero
    ========================== */
 .hero-content h1 {
-  font-size: 48px; /* Tamanho da fonte */
-  max-width: 900px; /* Define a largura máxima do título */
-  line-height: 1.2; /* Define a altura da linha */
+  font-size: 56px; /* Tamanho maior */
+  max-width: 1100px; /* Largura maior */
+  line-height: 1.15; /* Altura da linha ajustada */
   font-weight: 700; /* Negrito */
   margin: 0; /* Remove margens */
+  letter-spacing: 1px; /* Espaçamento entre letras */
 }
 
 /* ==========================
    Estilo Mobile
    ========================== */
 @media (max-width: 768px) {
+  .hero-image-container {
+    height: 100vh; /* Mantém altura total no mobile */
+    min-height: 500px;
+  }
+
   .hero-content {
-    padding-top: 100px; /* Reduz o espaçamento superior no celular */
+    padding: 100px 20px 40px; /* Ajusta padding no mobile */
   }
 
   .hero-content h1 {

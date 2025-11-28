@@ -5,25 +5,10 @@
   /* ==========================
      Cabeçalho e Navegação
      ========================== */
-  .header {
-    padding: 15px 20px; /* Reduz o espaçamento interno do cabeçalho */
-  }
-
-  .nav {
-    order: 3; /* Altera a ordem do elemento no layout */
-    width: 100%; /* Faz a navegação ocupar 100% da largura */
-    margin-top: 10px; /* Adiciona espaçamento superior */
-    text-align: center; /* Centraliza os itens da navegação */
-  }
-
-  .nav a {
-    margin: 0 10px; /* Adiciona espaçamento horizontal entre os links */
-    padding: 5px; /* Reduz o espaçamento interno dos links */
-  }
-
-  .lang-select {
-    margin-left: 0; /* Remove o espaçamento à esquerda */
-  }
+  /* REMOVIDO: Conflitava com header.css mobile
+     Todas as regras de .header, .nav, .nav a foram movidas para header.css
+     com media query @media (max-width: 880px) para consistência
+  */
 
   /* ==========================
      Hero Section
@@ -64,13 +49,14 @@
   /* ==========================
      Imagens (Logo e Bandeiras)
      ========================== */
-  .logo-img {
+  .logo .logo-img {
     height: 30px; /* Reduz a altura da logo */
+    max-height: 30px;
   }
 
-  .flag-img {
-    height: 30px !important; /* Reduz a altura das bandeiras */
-    width: 30px !important; /* Reduz a largura das bandeiras */
+  .logo .flag-img {
+    height: 25px !important; /* Reduz a altura das bandeiras */
+    width: 25px !important; /* Reduz a largura das bandeiras */
   }
 
   /* ==========================
@@ -127,4 +113,37 @@
     /* Você pode adicionar outros ajustes responsivos aqui, como:
     .about-full { padding: 1.5rem 0.5rem; } 
     */
+}
+
+/* ==========================
+   MOBILE: 880px e menor
+   IMPORTANTE: Essas regras NÃO devem conflitar com header.css
+   ========================== */
+@media (max-width: 880px) {
+  /* Garante que o header mobile funcione corretamente */
+  body {
+    padding-top: 0; /* Remove qualquer padding que possa interferir */
+  }
+  
+  /* Garante espaçamento correto para o conteúdo abaixo do header fixo */
+  .main-hero,
+  main,
+  .woocommerce {
+    margin-top: 70px !important;
+    padding-top: 10px;
+  }
+  
+  /* Ajustes gerais de espaçamento */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Garante que botões sejam tocáveis */
+  button,
+  a,
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }

@@ -8,7 +8,7 @@ get_header();
 <!-- HERO -->
 <section class="main-hero">
   <div class="hero-image-container">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/banner_elixan.png" alt="Elixan Banner" class="hero-image" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/banner_elixan.png" alt="Elixan Affiliate Programm - Verdienen Sie mit uns" class="hero-image" loading="eager" width="1920" height="600" />
     <div class="hero-content">
       <h1 data-key="banner_title">Affiliate Programm</h1>
       <button onclick="openModal()" data-key="banner_btn">Jetzt starten</button>

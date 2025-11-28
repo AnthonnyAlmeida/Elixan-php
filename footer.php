@@ -32,8 +32,8 @@
             <h3 data-key="footer_social_title">Folgen Sie uns</h3>
             <ul class="social-icons">
                 <li>
-                    <a href="https://www.facebook.com/elixanaromatica" target="_blank">
-                        <i class="fab fa-facebook"></i>
+                    <a href="https://www.facebook.com/elixanaromatica" target="_blank" rel="noopener noreferrer" aria-label="Visite nossa página no Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
                         <span data-key="footer_facebook">Facebook</span>
                     </a>
                 </li>

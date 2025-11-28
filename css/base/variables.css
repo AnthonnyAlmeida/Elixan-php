@@ -1,0 +1,215 @@
+/* ==========================
+   CSS Variables - Elixan Theme
+   ========================== */
+
+:root {
+  /* ==========================
+     CORES PRINCIPAIS
+     ========================== */
+  --color-primary: #53d68a;
+  --color-primary-dark: #42b571;
+  --color-primary-light: #6ee09f;
+  
+  --color-secondary: #0a0a0a;
+  --color-background: #000000;
+  --color-surface: #1a1a1a;
+  
+  /* Cores de texto */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e8e8e8;
+  --color-text-muted: rgba(255, 255, 255, 0.7);
+  --color-text-disabled: rgba(255, 255, 255, 0.4);
+  
+  /* Cores de estado */
+  --color-success: #53d68a;
+  --color-error: #ff5555;
+  --color-warning: #ffbb33;
+  --color-info: #5599ff;
+  
+  /* Cores de overlay */
+  --color-overlay: rgba(0, 0, 0, 0.8);
+  --color-overlay-light: rgba(0, 0, 0, 0.5);
+  
+  /* ==========================
+     TIPOGRAFIA
+     ========================== */
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-heading: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  
+  /* Tamanhos de fonte */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+  
+  /* Pesos de fonte */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* Line heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  --line-height-loose: 2;
+  
+  /* Letter spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+  
+  /* ==========================
+     ESPAÇAMENTOS
+     ========================== */
+  --spacing-xs: 0.25rem;   /* 4px */
+  --spacing-sm: 0.5rem;    /* 8px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  --spacing-3xl: 4rem;     /* 64px */
+  --spacing-4xl: 6rem;     /* 96px */
+  --spacing-5xl: 8rem;     /* 128px */
+  
+  /* ==========================
+     BORDAS E RAIOS
+     ========================== */
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 4px;
+  
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-2xl: 24px;
+  --border-radius-full: 9999px;
+  
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-color-hover: rgba(255, 255, 255, 0.2);
+  --border-color-focus: rgba(83, 214, 138, 0.5);
+  
+  /* ==========================
+     SOMBRAS
+     ========================== */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* Sombras coloridas */
+  --shadow-primary: 0 10px 30px rgba(83, 214, 138, 0.3);
+  --shadow-glow: 0 0 20px rgba(83, 214, 138, 0.4);
+  
+  /* ==========================
+     TRANSIÇÕES
+     ========================== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  --transition-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --transition-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --transition-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* ==========================
+     GLASSMORPHISM
+     ========================== */
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-bg-dark: rgba(0, 0, 0, 0.15);
+  --glass-blur: blur(20px);
+  --glass-blur-heavy: blur(40px);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  /* ==========================
+     Z-INDEX
+     ========================== */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+  
+  /* ==========================
+     BREAKPOINTS (para uso em calc())
+     ========================== */
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-wide: 1280px;
+  --breakpoint-ultrawide: 1536px;
+  
+  /* ==========================
+     TAMANHOS DE CONTAINER
+     ========================== */
+  --container-xs: 320px;
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+  
+  /* ==========================
+     HEADER
+     ========================== */
+  --header-height: 70px;
+  --header-height-mobile: 60px;
+  --header-bg: rgba(0, 0, 0, 0.15);
+  --header-blur: blur(20px) saturate(180%);
+  
+  /* ==========================
+     ANIMAÇÕES
+     ========================== */
+  --animation-fade-in: fadeIn 0.5s ease-in-out;
+  --animation-slide-up: slideUp 0.6s ease-out;
+  --animation-bounce: bounce 1s infinite;
+  
+  /* ==========================
+     OUTROS
+     ========================== */
+  --opacity-disabled: 0.5;
+  --opacity-hover: 0.8;
+}
+
+/* ==========================
+   VARIÁVEIS DARK MODE
+   ========================== */
+/* Tema já está em dark mode por padrão */
+
+/* ==========================
+   VARIÁVEIS LIGHT MODE (opcional)
+   ========================== */
+[data-theme="light"] {
+  --color-background: #ffffff;
+  --color-surface: #f5f5f5;
+  --color-text-primary: #000000;
+  --color-text-secondary: #1a1a1a;
+  --color-text-muted: rgba(0, 0, 0, 0.7);
+  --color-text-disabled: rgba(0, 0, 0, 0.4);
+}
+
+/* ==========================
+   REDUCED MOTION
+   ========================== */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-base: 0ms;
+    --transition-slow: 0ms;
+  }
+}
