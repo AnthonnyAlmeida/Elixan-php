@@ -1,0 +1,69 @@
+# WordPress Theme .gitignore
+
+# Configurações sensíveis
+wp-config.php
+.env
+.env.local
+*.key
+*.pem
+
+# Arquivos de sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (se usar build process)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Cache
+.cache/
+*.cache
+
+# Backups
+*.backup
+*.bak
+*.old
+*.orig
+*.tmp
+
+# Uploads (se tiver uploads no tema)
+uploads/
+*.zip
+*.tar.gz
+
+# Arquivos compilados
+*.min.css.map
+*.min.js.map
+dist/
+build/
+
+# Credentials (nunca commitar)
+credentials.json
+secrets.json
+auth.json
+config.local.php
