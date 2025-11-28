@@ -150,6 +150,9 @@
     width: 100% !important;
     z-index: 9999 !important;
     overflow: visible !important;
+    background: rgba(0, 0, 0, 0.15) !important; /* Mantém transparente como desktop */
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
   }
 
   .menu-toggle {

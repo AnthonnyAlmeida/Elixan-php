@@ -3,30 +3,38 @@
    ========================== */
 @media (max-width: 768px) {
   /* ==========================
-     Cabeçalho e Navegação
+     Body Mobile - Remove padding e fundo branco
      ========================== */
-  /* REMOVIDO: Conflitava com header.css mobile
-     Todas as regras de .header, .nav, .nav a foram movidas para header.css
-     com media query @media (max-width: 880px) para consistência
-  */
+  body {
+    padding-top: 0 !important; /* Remove padding que causa faixa branca */
+    background: #111 !important; /* Fundo escuro igual ao conteúdo */
+  }
 
   /* ==========================
      Hero Section
      ========================== */
   .hero-content h1 {
-    font-size: 22px; /* Reduz o tamanho da fonte do título */
+    font-size: 24px; /* Tamanho otimizado do título mobile */
   }
 
   .main-hero {
-    padding: 5px; /* Reduz o espaçamento interno */
-    padding-top: 90px !important; /* Garante espaçamento superior fixo */
+    margin-top: 0 !important; /* Remove espaço do topo - banner vai até o topo */
+    padding: 0 !important; /* Remove padding extra */
   }
 
-  .hero-image-container,
-  .hero-content,
+  .hero-image-container {
+    height: 60vh; /* Altura responsiva - 60% da tela */
+    min-height: 400px; /* Altura mínima */
+    max-height: 500px; /* Altura máxima */
+  }
+  
+  .hero-content {
+    padding: 80px 20px 30px !important; /* Espaço para o header transparente */
+  }
+  
   .hero-image {
-    max-height: 250px; /* Define uma altura máxima para o hero */
-    height: 250px; /* Define uma altura fixa */
+    height: 100%; /* Preenche o container */
+    object-fit: cover; /* Mantém proporção */
   }
 
   /* ==========================
@@ -35,9 +43,58 @@
   .benefits,
   .steps-container {
     flex-direction: column; /* Alinha os itens em coluna */
-    gap: 20px; /* Reduz o espaçamento entre os itens */
+    gap: 15px; /* Reduz espaçamento entre itens */
+    padding: 20px 10px; /* Padding compacto */
+  }
+  
+  .benefit-item,
+  .step-item {
+    padding: 15px; /* Padding interno reduzido */
+    margin: 0; /* Remove margens extras */
+  }
+  
+  .benefit-item i,
+  .step-item i,
+  .benefit-item img,
+  .step-item img {
+    width: 48px !important; /* Tamanho uniforme dos ícones */
+    height: 48px !important;
+    max-width: 48px;
+    max-height: 48px;
+    margin-bottom: 10px; /* Espaço abaixo do ícone */
+  }
+  
+  .benefit-item h3,
+  .step-item h3 {
+    font-size: 1.1rem; /* Tamanho proporcional */
+    margin-bottom: 8px;
+  }
+  
+  .benefit-item p,
+  .step-item p {
+    font-size: 0.9rem; /* Texto menor */
+    line-height: 1.5;
   }
 
+  /* ==========================
+     Espaçamento após Hero/Banner - Elimina faixa branca
+     ========================== */
+  .main-hero + section,
+  .main-hero + .container,
+  .main-hero + .introduction,
+  .main-hero + .benefits {
+    margin-top: 0 !important; /* Remove espaço que causa faixa branca */
+    padding-top: 40px !important; /* Padding interno para espaçamento */
+    background: #111 !important; /* Garante fundo escuro */
+  }
+  
+  /* Garante que seções tenham fundo escuro */
+  .introduction,
+  .benefits,
+  section {
+    background: #111 !important;
+  }
+  
   /* ==========================
      Grade de Produtos
      ========================== */
@@ -125,9 +182,14 @@
     padding-top: 0; /* Remove qualquer padding que possa interferir */
   }
   
-  /* Garante espaçamento correto para o conteúdo abaixo do header fixo */
-  .main-hero,
-  main,
+  /* Hero vai até o topo - header transparente sobrepõe */
+  .main-hero {
+    margin-top: 0 !important; /* Banner vai até o topo */
+    padding-top: 0 !important;
+  }
+  
+  /* Outras páginas mantêm espaço para o header */
+  main:not(.main-hero),
   .woocommerce {
     margin-top: 70px !important;
     padding-top: 10px;
