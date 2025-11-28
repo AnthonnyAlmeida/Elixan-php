@@ -28,11 +28,24 @@
   padding: 20px; /* Adiciona espaçamento interno */
   border-radius: 8px; /* Bordas arredondadas */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  position: relative; /* Para posicionar badges */
 }
 
 .product-card:hover {
   transform: translateY(-5px); /* Efeito de elevação */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Sombra mais forte */
+}
+
+/* Link clicável do produto */
+.product-card .product-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.product-card .product-link:hover h3 {
+  color: #53d68a; /* Verde ao passar o mouse no título */
 }
 
 /* Estiliza a imagem do produto dentro do cartão */
@@ -69,16 +82,55 @@
 
 /* Botões de compra */
 .product-card .buy-button {
+  display: inline-block;
   background-color: #2a9d8f; /* Fundo verde-azulado */
   color: #ffffff; /* Texto branco */
   border: none;
-  padding: 10px 15px;
+  padding: 12px 20px;
   border-radius: 8px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
 
 .product-card .buy-button:hover {
   background-color: #21867a; /* Fundo mais escuro no hover */
+  transform: scale(1.05);
+}
+
+/* Badges (NEW, SALE) */
+.product-card .badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.product-card .badge-new {
+  background-color: #53d68a;
+  color: #111;
+}
+
+.product-card .badge-sale {
+  background-color: #ff6b6b;
+  color: #fff;
+  top: 40px; /* Posiciona abaixo do badge NEW se ambos existirem */
+}
+
+/* Mensagem quando não há produtos */
+.no-products {
+  grid-column: 1 / -1;
+  padding: 60px 20px;
+  text-align: center;
+  color: #999;
+  font-size: 1.1rem;
 }
 
 /* Links */

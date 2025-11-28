@@ -26,46 +26,84 @@ get_header();
   <h2 data-key="listing_title">Unsere Topseller</h2>
 
   <div class="product-grid">
-
-    <!-- PRODUTO 1 -->
+    <?php
+    // Buscar produtos do WooCommerce
+    $args = array(
+      'post_type' => 'product',
+      'posts_per_page' => 12, // Mostrar até 12 produtos
+      'orderby' => 'date',
+      'order' => 'DESC',
+      'post_status' => 'publish'
+    );
+    
+    $products = new WP_Query($args);
+    
+    if ($products->have_posts()) :
+      while ($products->have_posts()) : $products->the_post();
+        global $product;
+        
+        // Pegar informações do produto
+        $product_id = get_the_ID();
+        $product_link = get_permalink($product_id);
+        $product_image = wp_get_attachment_image_src(get_post_thumbnail_id($product_id), 'medium');
+        $product_title = get_the_title();
+        $product_price = $product->get_price_html();
+        $product_excerpt = wp_trim_words(get_the_excerpt(), 15);
+        
+        // Verificar se é produto novo (publicado nos últimos 30 dias)
+        $is_new = (strtotime(get_the_date()) > strtotime('-30 days'));
+        
+        // Verificar se está em promoção
+        $is_on_sale = $product->is_on_sale();
+    ?>
+    
+    <!-- PRODUTO CARD -->
     <div class="product-card">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/produto_lavendel.png" alt="Óleo Essencial de Lavanda" class="product-img" />
-      <h3 data-key="product1_name">Lavendel (Lavanda)</h3>
-      <p class="product-description" data-key="product1_desc">Beruhigend, entspannend und schlaffördernd.</p>
-      <div class="product-meta">
-        <span class="product-price">€ 14.99</span>
-        <span class="product-size">10ml</span>
-      </div>
-      <a href="SUA_URL_SHOPIFY_PRODUTO_1" target="_blank" class="buy-button" data-key="buy_btn">JETZT KAUFEN</a>
+      <a href="<?php echo esc_url($product_link); ?>" class="product-link">
+        <?php if ($is_new) : ?>
+          <span class="badge badge-new" data-key="badge_new">NEU</span>
+        <?php endif; ?>
+        
+        <?php if ($is_on_sale) : ?>
+          <span class="badge badge-sale" data-key="badge_sale">SALE</span>
+        <?php endif; ?>
+        
+        <?php if ($product_image) : ?>
+          <img src="<?php echo esc_url($product_image[0]); ?>" 
+               alt="<?php echo esc_attr($product_title); ?>" 
+               class="product-img" 
+               loading="lazy" />
+        <?php else : ?>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/produto_neve.png" 
+               alt="<?php echo esc_attr($product_title); ?>" 
+               class="product-img" 
+               loading="lazy" />
+        <?php endif; ?>
+        
+        <h3><?php echo esc_html($product_title); ?></h3>
+        
+        <?php if ($product_excerpt) : ?>
+          <p class="product-description"><?php echo esc_html($product_excerpt); ?></p>
+        <?php endif; ?>
+        
+        <div class="product-meta">
+          <span class="product-price"><?php echo $product_price; ?></span>
+        </div>
+        
+        <span class="buy-button" data-key="view_product">DETAILS ANSEHEN</span>
+      </a>
     </div>
-
-    <!-- PRODUTO 2 -->
-    <div class="product-card">
-      <span class="badge" data-key="badge_new">NEU</span>
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/produto_zitrone.png" alt="Óleo Essencial de Limão" class="product-img" />
-      <h3 data-key="product2_name">Zitrone (Limão)</h3>
-      <p class="product-description" data-key="product2_desc">Belebt den Geist und wirkt reinigend.</p>
-      <div class="product-meta">
-        <span class="product-price">€ 12.50</span>
-        <span class="product-size">10ml</span>
+    
+    <?php
+      endwhile;
+      wp_reset_postdata();
+    else :
+    ?>
+      <!-- FALLBACK: Se não houver produtos, mostrar mensagem -->
+      <div class="no-products">
+        <p data-key="no_products">Momentan sind keine Produkte verfügbar. Bitte schauen Sie später wieder vorbei.</p>
       </div>
-      <a href="SUA_URL_SHOPIFY_PRODUTO_2" target="_blank" class="buy-button" data-key="buy_btn">JETZT KAUFEN</a>
-    </div>
-
-    <!-- PRODUTO 3 -->
-    <div class="product-card">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/produto_minz_set.png" alt="Kit de Óleos de Menta" class="product-img" />
-      <h3 data-key="product3_name">Vitalität Set</h3>
-      <p class="product-description" data-key="product3_desc">
-        Pfefferminz und Eukalyptus für Konzentration und Atemwege.
-      </p>
-      <div class="product-meta">
-        <span class="product-price">€ 29.90</span>
-        <span class="product-size">2x10ml</span>
-      </div>
-      <a href="SUA_URL_SHOPIFY_PRODUTO_3" target="_blank" class="buy-button" data-key="buy_btn">JETZT KAUFEN</a>
-    </div>
-
+    <?php endif; ?>
   </div>
 </section>
 
