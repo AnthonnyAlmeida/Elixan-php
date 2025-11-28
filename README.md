@@ -7,211 +7,211 @@
 ![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)
 ![Version](https://img.shields.io/badge/Version-6.0.0-green?style=for-the-badge)
 
-**Tema WordPress profissional para Elixan Aromatica**  
-*Óleos essenciais 100% puros da Suíça com sistema multilíngue e WooCommerce*
+**Professional WordPress theme for Elixan Aromatica**  
+*100% pure Swiss essential oils with multilingual system and WooCommerce*
 
-[Demo](http://192.168.100.9/elixan-wp/) · [Reportar Bug](https://github.com/AnthonnyAlmeida/Elixan-php/issues) · [Solicitar Feature](https://github.com/AnthonnyAlmeida/Elixan-php/issues)
+[Demo](http://192.168.100.9/elixan-wp/) · [Report Bug](https://github.com/AnthonnyAlmeida/Elixan-php/issues) · [Request Feature](https://github.com/AnthonnyAlmeida/Elixan-php/issues)
 
 </div>
 
 ---
 
-## 📋 Índice
+## 📋 Table of Contents
 
-- [Sobre o Projeto](#-sobre-o-projeto)
-- [Funcionalidades](#-funcionalidades)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Instalação](#-instalação)
-- [Configuração](#-configuração)
-- [Sistema de Tradução](#-sistema-de-tradução)
+- [About The Project](#-about-the-project)
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Technologies Used](#-technologies-used)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Translation System](#-translation-system)
 - [Performance](#-performance)
-- [Responsividade](#-responsividade)
-- [Segurança](#-segurança)
-- [Licença](#-licença)
-- [Autor](#-autor)
+- [Responsiveness](#-responsiveness)
+- [Security](#-security)
+- [License](#-license)
+- [Author](#-author)
 
 ---
 
-## 🎯 Sobre o Projeto
+## 🎯 About The Project
 
-Tema WordPress customizado desenvolvido para **Elixan Aromatica GmbH**, empresa suíça especializada em óleos essenciais 100% puros e naturais. O tema oferece:
+Custom WordPress theme developed for **Elixan Aromatica GmbH**, a Swiss company specializing in 100% pure and natural essential oils. The theme offers:
 
-- ✅ **25 idiomas** com tradução dinâmica via JavaScript
-- ✅ **Design responsivo** otimizado para mobile (glassmorphism)
-- ✅ **Integração WooCommerce** para e-commerce
-- ✅ **SEO otimizado** com Open Graph e Schema.org
-- ✅ **Performance** com cache busting e lazy loading
-- ✅ **Arquitetura modular** CSS (21 arquivos organizados)
+- ✅ **22 languages** with dynamic JavaScript translation
+- ✅ **Responsive design** optimized for mobile (glassmorphism)
+- ✅ **WooCommerce integration** for e-commerce
+- ✅ **SEO optimized** with Open Graph and Schema.org
+- ✅ **Performance** with cache busting and lazy loading
+- ✅ **Modular CSS architecture** (21 organized files)
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Features
 
-### 🌍 Sistema Multilíngue
-- **22 idiomas europeus** suportados nativamente
-- Tradução em tempo real sem recarregar página
-- LocalStorage para persistência de idioma
-- Suporte a `data-key` e `data-translate`
+### 🌍 Multilingual System
+- **22 European languages** natively supported
+- Real-time translation without page reload
+- LocalStorage for language persistence
+- Support for both `data-key` and `data-translate` attributes
 
-**Idiomas:** 🇵🇹 PT, 🇬🇧 EN, 🇩🇪 DE, 🇫🇷 FR, 🇪🇸 ES, 🇮🇹 IT, 🇳🇱 NL, 🇵🇱 PL, 🇸🇪 SV, 🇳🇴 NO, 🇫🇮 FI, 🇨🇿 CS, 🇸🇰 SK, 🇭🇺 HU, 🇷🇴 RO, 🇧🇬 BG, 🇭🇷 HR, 🇸🇮 SL, 🇪🇪 ET, 🇱🇻 LV, 🇱🇹 LT, 🇲🇹 MT
+**Languages:** 🇵🇹 PT, 🇬🇧 EN, 🇩🇪 DE, 🇫🇷 FR, 🇪🇸 ES, 🇮🇹 IT, 🇳🇱 NL, 🇵🇱 PL, 🇸🇪 SV, 🇳🇴 NO, 🇫🇮 FI, 🇨🇿 CS, 🇸🇰 SK, 🇭🇺 HU, 🇷🇴 RO, 🇧🇬 BG, 🇭🇷 HR, 🇸🇮 SL, 🇪🇪 ET, 🇱🇻 LV, 🇱🇹 LT, 🇲🇹 MT
 
-### 📱 Design Responsivo
-- Mobile-first com breakpoints @ 768px e 880px
-- Menu hambúrguer com glassmorphism
-- Header transparente com backdrop-filter
-- Footer ultra-compacto (40% redução mobile)
-- Imagens adaptativas com lazy loading
+### 📱 Responsive Design
+- Mobile-first with breakpoints @ 768px and 880px
+- Hamburger menu with glassmorphism effects
+- Transparent header with backdrop-filter
+- Ultra-compact footer (40% size reduction on mobile)
+- Adaptive images with lazy loading
 
 ### 🛒 WooCommerce
-- Templates customizados
-- Estilos integrados ao design
-- Suporte a produtos variáveis
-- Sistema de afiliados
+- Custom templates
+- Integrated styling
+- Variable product support
+- Affiliate system
 
-### 🎨 Interface Moderna
+### 🎨 Modern Interface
 - Glassmorphism effects
-- Animações suaves
+- Smooth animations
 - Font Awesome 6.5.1
-- Accordions e modais
-- Cards de benefícios
+- Accordions and modals
+- Benefit cards
 
-### 🔍 SEO Avançado
-- Meta tags Open Graph (Facebook)
+### 🔍 Advanced SEO
+- Open Graph meta tags (Facebook)
 - Twitter Cards
 - Schema.org JSON-LD (Organization)
-- Alt texts em imagens
-- Sitemap compatível
-- Breadcrumbs estruturados
+- Image alt texts
+- Sitemap compatible
+- Structured breadcrumbs
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 elixan-theme/
 │
-├── 📄 style.css                    # Stylesheet principal (metadata)
-├── 📄 functions.php                # Enqueue de assets e setup
-├── 📄 index.php                    # Home page
-├── 📄 header.php                   # Header global
-├── 📄 footer.php                   # Footer global
-├── 📄 woocommerce.php              # Template WooCommerce
-├── 📄 page-*.php                   # Templates de páginas
+├── 📄 style.css                    # Main stylesheet (metadata)
+├── 📄 functions.php                # Asset enqueuing and setup
+├── 📄 index.php                    # Home page template
+├── 📄 header.php                   # Global header
+├── 📄 footer.php                   # Global footer
+├── 📄 woocommerce.php              # WooCommerce template
+├── 📄 page-*.php                   # Page templates
 │
-├── 📂 assets/                      # Recursos estáticos (5.6MB)
-│   ├── logo-elixan2.svg           # Logo vetorial (9KB)
+├── 📂 assets/                      # Static resources (5.6MB)
+│   ├── logo-elixan2.svg           # Vector logo (9KB)
 │   ├── bandeira_suica.png         # Swiss quality badge (2.2MB)
-│   ├── banner_produtos.png        # Banner produtos (1.8MB)
+│   ├── banner_produtos.png        # Product banner (1.8MB)
 │   ├── produto_neve.png           # Hero image (1.4MB)
 │   └── ...
 │
-├── 📂 css/ (132KB)                 # Estilos modulares
-│   ├── main.css                   # Hub de importação
-│   ├── woocommerce.css            # Estilos WooCommerce
+├── 📂 css/ (132KB)                 # Modular styles
+│   ├── main.css                   # Import hub
+│   ├── woocommerce.css            # WooCommerce styles
 │   │
-│   ├── base/                      # Fundação
+│   ├── base/                      # Foundation
 │   │   ├── reset.css              # CSS reset
-│   │   ├── variables.css          # Variáveis globais
-│   │   └── typography.css         # Tipografia
+│   │   ├── variables.css          # Global variables
+│   │   └── typography.css         # Typography
 │   │
-│   ├── layout/                    # Estrutura
-│   │   ├── containers.css         # Containers e wrappers
-│   │   ├── grid.css               # Sistema de grid
-│   │   ├── header.css             # Header + navegação
-│   │   ├── hero.css               # Seções hero
+│   ├── layout/                    # Structure
+│   │   ├── containers.css         # Containers and wrappers
+│   │   ├── grid.css               # Grid system
+│   │   ├── header.css             # Header + navigation
+│   │   ├── hero.css               # Hero sections
 │   │   └── footer.css             # Footer
 │   │
-│   ├── components/                # Componentes reutilizáveis
-│   │   ├── buttons.css            # Botões
+│   ├── components/                # Reusable components
+│   │   ├── buttons.css            # Buttons
 │   │   ├── cards.css              # Cards
-│   │   ├── modal.css              # Modais
-│   │   └── accordion.css          # Acordeões
+│   │   ├── modal.css              # Modals
+│   │   └── accordion.css          # Accordions
 │   │
-│   ├── pages/                     # Páginas específicas
+│   ├── pages/                     # Page-specific styles
 │   │   ├── home.css               # Home
-│   │   ├── produtos.css           # Produtos
-│   │   ├── sobre.css              # Sobre
-│   │   └── afiliados.css          # Afiliados
+│   │   ├── produtos.css           # Products
+│   │   ├── sobre.css              # About
+│   │   └── afiliados.css          # Affiliates
 │   │
-│   └── utils/                     # Utilitários
-│       ├── animations.css         # Animações
-│       ├── helper.css             # Classes helper
+│   └── utils/                     # Utilities
+│       ├── animations.css         # Animations
+│       ├── helper.css             # Helper classes
 │       └── responsive.css         # Media queries
 │
 ├── 📂 js/ (20KB)                   # JavaScript
-│   ├── menu-mobile.js             # Menu hambúrguer (51 linhas)
-│   ├── simple-translate.js        # Sistema de tradução (103 linhas)
-│   ├── modal.js                   # Controle de modais
-│   └── accordion.js               # Controle de accordions
+│   ├── menu-mobile.js             # Hamburger menu (51 lines)
+│   ├── simple-translate.js        # Translation system (103 lines)
+│   ├── modal.js                   # Modal control
+│   └── accordion.js               # Accordion control
 │
-├── 📂 locales/ (276KB)             # Traduções
-│   ├── pt.json                    # Português
+├── 📂 locales/ (276KB)             # Translations
+│   ├── pt.json                    # Portuguese
 │   ├── en.json                    # English
-│   ├── de.json                    # Deutsch
-│   ├── fr.json                    # Français
-│   ├── es.json                    # Español
-│   └── ...                        # +17 idiomas
+│   ├── de.json                    # German
+│   ├── fr.json                    # French
+│   ├── es.json                    # Spanish
+│   └── ...                        # +17 languages
 │
-└── 📄 .gitignore                   # Arquivos ignorados pelo Git
+└── 📄 .gitignore                   # Git ignored files
 ```
 
-**Total:** 34 arquivos | ~6MB (5.6MB em assets)
+**Total:** 34 files | ~6MB (5.6MB in assets)
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
 ### Backend
 - **WordPress** 6.0+ (CMS)
-- **PHP** 7.4+ (Lógica server-side)
+- **PHP** 7.4+ (Server-side logic)
 - **WooCommerce** 8.0+ (E-commerce)
 
 ### Frontend
-- **HTML5** (Semântico)
+- **HTML5** (Semantic markup)
 - **CSS3** (Grid, Flexbox, Custom Properties)
-- **JavaScript ES6+** (Vanilla JS, sem frameworks)
-- **Font Awesome** 6.5.1 (Ícones)
+- **JavaScript ES6+** (Vanilla JS, no frameworks)
+- **Font Awesome** 6.5.1 (Icons)
 
-### Arquitetura
-- **CSS Modular** (21 arquivos organizados)
-- **BEM-like naming** (classes descritivas)
+### Architecture
+- **Modular CSS** (21 organized files)
+- **BEM-like naming** (Descriptive classes)
 - **Mobile-first** (Progressive enhancement)
-- **Component-based** (Reutilização)
+- **Component-based** (Reusability)
 
 ### Performance
-- **Cache busting** (`time()` dinâmico)
-- **Lazy loading** (imagens)
-- **Preconnect** (CDN Font Awesome)
-- **Minificação ready** (estrutura preparada)
+- **Cache busting** (Dynamic `time()`)
+- **Lazy loading** (Images)
+- **Preconnect** (Font Awesome CDN)
+- **Minification ready** (Prepared structure)
 
 ### SEO
-- **Open Graph** (Facebook share)
-- **Twitter Cards** (Twitter share)
+- **Open Graph** (Facebook sharing)
+- **Twitter Cards** (Twitter sharing)
 - **Schema.org** (Rich snippets)
 - **Meta tags** (Description, keywords)
 
 ---
 
-## 📥 Instalação
+## 📥 Installation
 
-### 1. Clone o Repositório
+### 1. Clone the Repository
 
 ```bash
 cd wp-content/themes/
 git clone https://github.com/AnthonnyAlmeida/Elixan-php.git elixan-theme
 ```
 
-### 2. Ative o Tema
+### 2. Activate the Theme
 
-No painel WordPress:
+In WordPress admin panel:
 ```
-Aparência → Temas → Elixan Theme → Ativar
+Appearance → Themes → Elixan Theme → Activate
 ```
 
-### 3. Instale Dependências (Opcional)
+### 3. Install Dependencies (Optional)
 
-Para otimização de imagens:
+For image optimization:
 ```bash
 # Ubuntu/Debian
 sudo apt install webp
@@ -220,7 +220,7 @@ sudo apt install webp
 brew install webp
 ```
 
-### 4. Configure Permissões (Linux)
+### 4. Set Permissions (Linux)
 
 ```bash
 sudo chown -R www-data:www-data elixan-theme/
@@ -229,51 +229,51 @@ sudo chmod -R 755 elixan-theme/
 
 ---
 
-## ⚙️ Configuração
+## ⚙️ Configuration
 
-### Passo 1: Ativar WooCommerce
+### Step 1: Activate WooCommerce
 
 ```bash
 # Via WP-CLI
 wp plugin install woocommerce --activate
 
-# Ou via painel WordPress:
-Plugins → Adicionar Novo → WooCommerce → Instalar → Ativar
+# Or via WordPress dashboard:
+Plugins → Add New → WooCommerce → Install → Activate
 ```
 
-### Passo 2: Configurar Idioma Padrão
+### Step 2: Set Default Language
 
-Edite `js/simple-translate.js` (linha 95):
+Edit `js/simple-translate.js` (line 95):
 ```javascript
-const savedLanguage = localStorage.getItem('selectedLanguage') || 'de'; // Alemão padrão
+const savedLanguage = localStorage.getItem('selectedLanguage') || 'de'; // German default
 ```
 
-### Passo 3: Personalizar Cores (Opcional)
+### Step 3: Customize Colors (Optional)
 
-Edite `css/base/variables.css`:
+Edit `css/base/variables.css`:
 ```css
 :root {
-  --primary-color: #2a5934;      /* Verde principal */
-  --secondary-color: #8b4513;    /* Marrom secundário */
-  --accent-color: #d4af37;       /* Dourado accent */
-  --text-color: #333;            /* Texto escuro */
-  --bg-color: #f8f9fa;           /* Background claro */
+  --primary-color: #2a5934;      /* Primary green */
+  --secondary-color: #8b4513;    /* Secondary brown */
+  --accent-color: #d4af37;       /* Accent gold */
+  --text-color: #333;            /* Dark text */
+  --bg-color: #f8f9fa;           /* Light background */
 }
 ```
 
 ---
 
-## 🌍 Sistema de Tradução
+## 🌍 Translation System
 
-### Como Funciona
+### How It Works
 
-1. **Elementos HTML** com atributo `data-translate`:
+1. **HTML elements** with `data-translate` attribute:
 ```html
 <h1 data-translate="hero_title">100% Pure Essential Oils</h1>
 <button data-translate="cta_button">Shop Now</button>
 ```
 
-2. **Arquivos JSON** em `locales/`:
+2. **JSON files** in `locales/`:
 ```json
 // locales/de.json
 {
@@ -282,7 +282,7 @@ Edite `css/base/variables.css`:
 }
 ```
 
-3. **JavaScript** carrega e aplica traduções:
+3. **JavaScript** loads and applies translations:
 ```javascript
 // js/simple-translate.js
 async function loadLanguage(lang) {
@@ -292,24 +292,24 @@ async function loadLanguage(lang) {
 }
 ```
 
-### Adicionar Novo Idioma
+### Adding a New Language
 
-1. Crie arquivo `locales/xx.json` (onde `xx` é o código ISO)
-2. Copie estrutura de `locales/en.json`
-3. Traduza todos os valores
-4. Adicione opção no `<select>` do `header.php`:
+1. Create file `locales/xx.json` (where `xx` is the ISO code)
+2. Copy structure from `locales/en.json`
+3. Translate all values
+4. Add option in `<select>` in `header.php`:
 ```html
-<option value="xx">🇽🇽 Idioma</option>
+<option value="xx">🇽🇽 Language</option>
 ```
 
-### Traduzir Novo Conteúdo
+### Translating New Content
 
-1. Adicione `data-translate` no HTML:
+1. Add `data-translate` to HTML:
 ```html
 <p data-translate="new_key">Default text</p>
 ```
 
-2. Adicione chave em TODOS os JSONs:
+2. Add key to ALL JSON files:
 ```json
 {
   "new_key": "Translated text"
@@ -320,42 +320,42 @@ async function loadLanguage(lang) {
 
 ## 🚀 Performance
 
-### Métricas Atuais
+### Current Metrics
 
-| Métrica | Desktop | Mobile |
-|---------|---------|--------|
+| Metric | Desktop | Mobile |
+|--------|---------|--------|
 | **First Contentful Paint** | 0.8s | 1.2s |
 | **Largest Contentful Paint** | 1.5s | 2.3s |
 | **Time to Interactive** | 1.2s | 1.8s |
 | **Total Blocking Time** | 120ms | 180ms |
 | **Cumulative Layout Shift** | 0.02 | 0.03 |
 
-### Otimizações Implementadas
+### Implemented Optimizations
 
-✅ Cache busting com `time()`  
-✅ Preconnect para Font Awesome CDN  
-✅ Lazy loading em imagens  
-✅ CSS modular (evita bloat)  
-✅ JavaScript vanilla (sem jQuery)  
-✅ Header transparente (menos elementos)  
-✅ Footer compacto mobile  
+✅ Cache busting with `time()`  
+✅ Preconnect to Font Awesome CDN  
+✅ Lazy loading for images  
+✅ Modular CSS (prevents bloat)  
+✅ Vanilla JavaScript (no jQuery)  
+✅ Transparent header (fewer elements)  
+✅ Compact mobile footer  
 
-### Otimizações Planejadas
+### Planned Optimizations
 
-⏳ Imagens WebP (economia de 93%)  
-⏳ Minificação CSS/JS (economia de 40%)  
-⏳ Critical CSS inline  
-⏳ Defer JavaScript não-crítico  
-⏳ Service Worker para cache  
+⏳ WebP images (93% size reduction)  
+⏳ CSS/JS minification (40% savings)  
+⏳ Inline critical CSS  
+⏳ Defer non-critical JavaScript  
+⏳ Service Worker for caching  
 
 ---
 
-## 📱 Responsividade
+## 📱 Responsiveness
 
 ### Breakpoints
 
 ```css
-/* Mobile First - Base styles para mobile */
+/* Mobile First - Base styles for mobile */
 .container { padding: 15px; }
 
 /* Tablet - 768px */
@@ -379,146 +379,146 @@ async function loadLanguage(lang) {
 
 ### Mobile Features
 
-- Menu hambúrguer com glassmorphism
-- Header fixo com backdrop-filter
-- Footer ultra-compacto (25px padding)
+- Hamburger menu with glassmorphism
+- Fixed header with backdrop-filter
+- Ultra-compact footer (25px padding)
 - Hero 60vh (400-500px min/max)
-- Ícones 48x48px padronizados
+- Standardized 48x48px icons
 - Touch-friendly (44px+ tap targets)
 
 ---
 
-## 🔒 Segurança
+## 🔒 Security
 
-### Práticas Implementadas
+### Implemented Practices
 
-✅ `.gitignore` para arquivos sensíveis  
-✅ Escape de outputs (`esc_url`, `wp_strip_all_tags`)  
-✅ Nonces em formulários (WooCommerce)  
-✅ Sanitização de inputs  
-✅ WP-Cron desabilitado (performance)  
+✅ `.gitignore` for sensitive files  
+✅ Output escaping (`esc_url`, `wp_strip_all_tags`)  
+✅ Nonces in forms (WooCommerce)  
+✅ Input sanitization  
+✅ WP-Cron disabled (performance)  
 
-### Arquivos Protegidos
+### Protected Files
 
-O `.gitignore` bloqueia:
-- `wp-config.php` (credenciais DB)
-- `.env` (variáveis de ambiente)
-- `*.key`, `*.pem` (certificados)
-- `node_modules/` (dependências)
-- `*.log` (logs sensíveis)
+The `.gitignore` blocks:
+- `wp-config.php` (DB credentials)
+- `.env` (environment variables)
+- `*.key`, `*.pem` (certificates)
+- `node_modules/` (dependencies)
+- `*.log` (sensitive logs)
 
 ---
 
-## 🧪 Testes
+## 🧪 Testing
 
-### Checklist Manual
+### Manual Checklist
 
-- [x] Menu mobile funciona em todos breakpoints
-- [x] Tradução muda conteúdo sem reload
-- [x] Imagens carregam com lazy loading
-- [x] WooCommerce exibe produtos corretamente
-- [x] Footer compacto em mobile
-- [x] Header transparente no topo
+- [x] Mobile menu works on all breakpoints
+- [x] Translation changes content without reload
+- [x] Images load with lazy loading
+- [x] WooCommerce displays products correctly
+- [x] Compact footer on mobile
+- [x] Transparent header at top
 
-### Navegadores Testados
+### Tested Browsers
 
 ✅ Chrome 120+ (Desktop/Mobile)  
 ✅ Firefox 121+ (Desktop/Mobile)  
 ✅ Safari 17+ (Desktop/iOS)  
 ✅ Edge 120+ (Desktop)  
-⚠️ IE11 (suporte limitado - sem backdrop-filter)  
+⚠️ IE11 (limited support - no backdrop-filter)  
 
 ---
 
 ## 📊 Roadmap
 
-### v6.1.0 (Próxima Release)
-- [ ] Otimização de imagens (WebP)
-- [ ] Minificação CSS/JS
-- [ ] Alt texts multilíngue
-- [ ] Acessibilidade ARIA (menu mobile)
+### v6.1.0 (Next Release)
+- [ ] Image optimization (WebP)
+- [ ] CSS/JS minification
+- [ ] Multilingual alt texts
+- [ ] ARIA accessibility (mobile menu)
 
 ### v6.2.0
 - [ ] Loading states (spinner)
-- [ ] Error handling (tradução)
-- [ ] Breadcrumbs SEO
-- [ ] Critical CSS inline
+- [ ] Error handling (translation)
+- [ ] SEO breadcrumbs
+- [ ] Inline critical CSS
 
-### v7.0.0 (Futuro)
-- [ ] Animações de entrada (Intersection Observer)
+### v7.0.0 (Future)
+- [ ] Entry animations (Intersection Observer)
 - [ ] Dark mode
 - [ ] PWA (Service Worker)
-- [ ] Sitemap XML dinâmico
+- [ ] Dynamic XML sitemap
 
 ---
 
 ## 🐛 Troubleshooting
 
-### Traduções não funcionam
+### Translations not working
 
 ```javascript
-// Verifique o console do navegador
-console.log(THEME_PATH); // Deve mostrar o caminho do tema
+// Check browser console
+console.log(THEME_PATH); // Should show theme path
 
-// Verifique se os JSONs carregam
+// Check if JSONs load
 fetch(`${THEME_PATH}/locales/de.json`)
   .then(r => r.json())
   .then(console.log);
 ```
 
-### Menu mobile não abre
+### Mobile menu won't open
 
 ```javascript
-// Verifique se o script carregou
-console.log(document.getElementById('menu-toggle')); // Não deve ser null
+// Check if script loaded
+console.log(document.getElementById('menu-toggle')); // Should not be null
 
-// Verifique CSS
+// Check CSS
 const nav = document.querySelector('.nav');
-console.log(getComputedStyle(nav).display); // Deve ser 'none' ou 'flex'
+console.log(getComputedStyle(nav).display); // Should be 'none' or 'flex'
 ```
 
-### Imagens não aparecem
+### Images not appearing
 
 ```bash
-# Verifique permissões
+# Check permissions
 ls -la assets/
-# Deve mostrar: -rw-r--r-- www-data www-data
+# Should show: -rw-r--r-- www-data www-data
 
-# Corrija permissões
+# Fix permissions
 sudo chown -R www-data:www-data assets/
 sudo chmod -R 755 assets/
 ```
 
 ---
 
-## 📝 Licença
+## 📝 License
 
 **Proprietary License**
 
-© 2025 Elixan Aromatica GmbH. Todos os direitos reservados.
+© 2025 Elixan Aromatica GmbH. All rights reserved.
 
-Este tema WordPress é propriedade exclusiva da **Elixan Aromatica GmbH** e foi desenvolvido para uso interno da empresa. 
+This WordPress theme is the exclusive property of **Elixan Aromatica GmbH** and was developed for internal company use.
 
-### Termos de Uso
+### Terms of Use
 
-❌ **NÃO É PERMITIDO:**
-- Redistribuir ou vender este código
-- Usar em projetos comerciais de terceiros
-- Remover créditos ou avisos de copyright
-- Fazer engenharia reversa para fins competitivos
+❌ **NOT PERMITTED:**
+- Redistribute or sell this code
+- Use in third-party commercial projects
+- Remove credits or copyright notices
+- Reverse engineer for competitive purposes
 
-✅ **É PERMITIDO:**
-- Visualizar o código para fins educacionais
-- Reportar bugs e sugerir melhorias via Issues
-- Fazer fork para estudo pessoal (não comercial)
+✅ **PERMITTED:**
+- View code for educational purposes
+- Report bugs and suggest improvements via Issues
+- Fork for personal study (non-commercial)
 
-### Contribuições
+### Contributions
 
-Este é um projeto proprietário, mas contribuições são bem-vindas:
+This is a proprietary project, but contributions are welcome:
 
-1. **Reportar Bugs:** [Abrir Issue](https://github.com/AnthonnyAlmeida/Elixan-php/issues)
-2. **Sugerir Features:** [Abrir Issue com label "enhancement"](https://github.com/AnthonnyAlmeida/Elixan-php/issues)
-3. **Pull Requests:** Serão analisadas caso a caso
+1. **Report Bugs:** [Open Issue](https://github.com/AnthonnyAlmeida/Elixan-php/issues)
+2. **Suggest Features:** [Open Issue with "enhancement" label](https://github.com/AnthonnyAlmeida/Elixan-php/issues)
+3. **Pull Requests:** Will be reviewed case by case
 
 ---
 
@@ -539,28 +539,28 @@ WordPress • PHP • JavaScript • CSS Architecture • Responsive Design • 
 
 ---
 
-## 🙏 Agradecimentos
+## 🙏 Acknowledgments
 
-- **Elixan Aromatica GmbH** - Cliente e proprietário do projeto
-- **WordPress Community** - Documentação e suporte
-- **Font Awesome** - Biblioteca de ícones
-- **GitHub** - Hospedagem do repositório
+- **Elixan Aromatica GmbH** - Client and project owner
+- **WordPress Community** - Documentation and support
+- **Font Awesome** - Icon library
+- **GitHub** - Repository hosting
 
 ---
 
-## 📞 Suporte
+## 📞 Support
 
-Para questões relacionadas ao tema:
+For theme-related questions:
 
 - 🐛 **Bugs:** [GitHub Issues](https://github.com/AnthonnyAlmeida/Elixan-php/issues)
 - 💡 **Features:** [GitHub Discussions](https://github.com/AnthonnyAlmeida/Elixan-php/discussions)
-- 📧 **Email:** contato@elixan-aromatica.ch (suporte comercial)
+- 📧 **Email:** contato@elixan-aromatica.ch (commercial support)
 
 ---
 
 <div align="center">
 
-**Desenvolvido com ❤️ para Elixan Aromatica**
+**Developed with ❤️ for Elixan Aromatica**
 
 ![Made with Love](https://img.shields.io/badge/Made%20with-Love-red?style=for-the-badge)
 ![WordPress](https://img.shields.io/badge/Powered%20by-WordPress-21759B?style=for-the-badge&logo=wordpress)
