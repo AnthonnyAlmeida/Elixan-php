@@ -1,0 +1,391 @@
+/* ==========================================
+   Single Product Page Styles
+   ========================================== */
+
+.single-product-page {
+  background-color: #111;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 100px; /* Espaço para o header fixo */
+}
+
+/* Product Detail Section */
+.product-detail {
+  padding: 60px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Product Image */
+.product-image-wrapper {
+  position: sticky;
+  top: 120px;
+}
+
+.product-main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  background: #1a1a1a;
+  padding: 20px;
+}
+
+/* Product Info */
+.product-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Price Section */
+.product-price-section {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #53d68a;
+}
+
+.product-price-section del {
+  color: #999;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.product-price-section ins {
+  text-decoration: none;
+  color: #53d68a;
+}
+
+/* Short Description */
+.product-short-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d8d8d8;
+}
+
+.product-short-description p {
+  margin: 0 0 15px 0;
+}
+
+/* Add to Cart Section */
+.product-add-to-cart {
+  padding: 30px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.product-add-to-cart .cart {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.product-add-to-cart .quantity {
+  display: flex;
+  align-items: center;
+}
+
+.product-add-to-cart .quantity input[type="number"] {
+  width: 80px;
+  padding: 12px;
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.product-add-to-cart .single_add_to_cart_button {
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-add-to-cart .single_add_to_cart_button:hover {
+  background-color: #21867a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(42, 157, 143, 0.4);
+}
+
+.product-add-to-cart .single_add_to_cart_button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Product Meta */
+.product-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #999;
+}
+
+.product-meta strong {
+  color: #fff;
+  margin-right: 8px;
+}
+
+.product-meta .sku {
+  color: #53d68a;
+  font-weight: 600;
+}
+
+/* Back to Products Button */
+.back-to-products {
+  margin-top: 20px;
+}
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #444;
+  transform: translateX(-5px);
+  color: #53d68a;
+}
+
+/* Product Tabs Section */
+.product-tabs-section {
+  background-color: #0a0a0a;
+  padding: 60px 20px;
+}
+
+.product-tabs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.woocommerce-tabs {
+  color: #fff;
+}
+
+.woocommerce-tabs .tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid #333;
+}
+
+.woocommerce-tabs .tabs li {
+  margin: 0;
+}
+
+.woocommerce-tabs .tabs li a {
+  display: block;
+  padding: 15px 30px;
+  background-color: #1a1a1a;
+  color: #999;
+  text-decoration: none;
+  border-radius: 8px 8px 0 0;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.woocommerce-tabs .tabs li.active a,
+.woocommerce-tabs .tabs li a:hover {
+  background-color: #333;
+  color: #53d68a;
+}
+
+.woocommerce-tabs .panel {
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-radius: 0 12px 12px 12px;
+  line-height: 1.8;
+}
+
+.woocommerce-tabs .panel h2 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.woocommerce-tabs .panel p {
+  color: #d8d8d8;
+  margin-bottom: 15px;
+}
+
+/* Related Products Section */
+.related-products-section {
+  padding: 60px 20px;
+  background-color: #111;
+}
+
+.related-products-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.related-products-container h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.related-products-container .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-products-container .product {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.related-products-container .product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  border-color: #53d68a;
+}
+
+.related-products-container .product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.related-products-container .product h2,
+.related-products-container .product .woocommerce-loop-product__title {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.related-products-container .product .price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #53d68a;
+  margin: 10px 0;
+}
+
+.related-products-container .product .button {
+  background-color: #2a9d8f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.related-products-container .product .button:hover {
+  background-color: #21867a;
+  transform: scale(1.05);
+}
+
+/* ==========================================
+   Responsive Design - Mobile
+   ========================================== */
+
+@media (max-width: 880px) {
+  .single-product-page {
+    padding-top: 80px;
+  }
+
+  .product-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .product-image-wrapper {
+    position: relative;
+    top: 0;
+  }
+
+  .product-title {
+    font-size: 1.8rem;
+  }
+
+  .product-price-section {
+    font-size: 1.5rem;
+  }
+
+  .product-add-to-cart .cart {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .product-add-to-cart .single_add_to_cart_button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .woocommerce-tabs .tabs {
+    flex-direction: column;
+  }
+
+  .woocommerce-tabs .tabs li a {
+    border-radius: 8px;
+  }
+
+  .related-products-container .products {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail {
+    padding: 30px 15px;
+  }
+
+  .product-title {
+    font-size: 1.5rem;
+  }
+
+  .product-price-section {
+    font-size: 1.3rem;
+  }
+
+  .related-products-container .products {
+    grid-template-columns: 1fr;
+  }
+}

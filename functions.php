@@ -15,6 +15,11 @@ function elixan_theme_scripts() {
         wp_enqueue_style('woocommerce-css', get_template_directory_uri() . '/css/woocommerce.css', array('main-css'), time());
     }
     
+    // Single Product CSS (página individual de produto)
+    if (is_product()) {
+        wp_enqueue_style('single-product-css', get_template_directory_uri() . '/css/pages/single-product.css', array('elixan-style'), time());
+    }
+    
     // JavaScript LEVE - Sistema de tradução otimizado (1.6KB)
     // Carrega no footer (true) para garantir que DOM esteja pronto
     wp_enqueue_script('simple-translate', get_template_directory_uri() . '/js/simple-translate.js', array(), time(), true);
