@@ -65,6 +65,7 @@
 
     const savedLang = localStorage.getItem('idioma') || 'de';
     selector.value = savedLang;
+    localStorage.setItem('selectedLanguage', savedLang); // Sincroniza para WooCommerce
     
     // Carrega e aplica traduções
     loadTranslation(savedLang).then(() => {
@@ -80,7 +81,11 @@
       const newLang = e.target.value;
       loadTranslation(newLang).then(() => {
         localStorage.setItem('idioma', newLang); // Garante que salva
+        localStorage.setItem('selectedLanguage', newLang); // Para WooCommerce
         forceApply();
+        
+        // Dispara evento para outros scripts (ex: WooCommerce)
+        window.dispatchEvent(new Event('languageChanged'));
       });
     });
   });

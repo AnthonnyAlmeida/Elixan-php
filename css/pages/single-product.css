@@ -2,6 +2,24 @@
    Single Product Page Styles
    ========================================== */
 
+/* Force override body styles on product pages */
+body.single-product,
+body.woocommerce-page.single-product {
+  background-color: #111 !important;
+  color: #fff !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Reset WooCommerce default container issues */
+body.single-product #main,
+body.single-product .site-main,
+body.single-product .content-area {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .single-product-page {
   background-color: #111;
   color: #fff;
@@ -242,83 +260,231 @@
   margin-bottom: 15px;
 }
 
-/* Related Products Section */
-.related-products-section {
-  padding: 60px 20px;
-  background-color: #111;
+/* Related Products Section - PROFISSIONAL */
+.related.products,
+.upsells.products {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+  margin-top: 60px;
 }
 
-.related-products-container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.related-products-container h2 {
-  font-size: 2rem;
+.related.products > h2,
+.upsells.products > h2 {
+  font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
 }
 
-.related-products-container .products {
+.related.products > h2::after,
+.upsells.products > h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #53d68a, #2a9d8f);
+  border-radius: 2px;
+}
+
+.related.products ul.products,
+.upsells.products ul.products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 30px;
   list-style: none;
   padding: 0;
   margin: 0;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.related-products-container .product {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 12px;
-  padding: 20px;
+.related.products ul.products li.product,
+.upsells.products ul.products li.product {
+  background: linear-gradient(145deg, #1a1a1a, #141414);
+  border: 1px solid rgba(83, 214, 138, 0.1);
+  border-radius: 16px;
+  padding: 0;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  aspect-ratio: 1 / 1.35; /* Proporção retrato elegante */
+  display: flex;
+  flex-direction: column;
 }
 
-.related-products-container .product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
-  border-color: #53d68a;
+.related.products ul.products li.product::before,
+.upsells.products ul.products li.product::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #53d68a, #2a9d8f);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.related-products-container .product img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
+.related.products ul.products li.product:hover,
+.upsells.products ul.products li.product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(83, 214, 138, 0.2);
+  border-color: rgba(83, 214, 138, 0.4);
 }
 
-.related-products-container .product h2,
-.related-products-container .product .woocommerce-loop-product__title {
-  font-size: 1.1rem;
+.related.products ul.products li.product:hover::before,
+.upsells.products ul.products li.product:hover::before {
+  opacity: 1;
+}
+
+.related.products ul.products li.product a,
+.upsells.products ul.products li.product a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.related.products ul.products li.product img,
+.upsells.products ul.products li.product img {
+  width: 100%;
+  height: 55%; /* 55% da altura do card */
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 0;
+  transition: transform 0.4s ease;
+  flex-shrink: 0;
+}
+
+.related.products ul.products li.product:hover img,
+.upsells.products ul.products li.product:hover img {
+  transform: scale(1.05);
+}
+
+.related.products ul.products li.product h2,
+.related.products ul.products li.product .woocommerce-loop-product__title,
+.upsells.products ul.products li.product h2,
+.upsells.products ul.products li.product .woocommerce-loop-product__title {
+  font-size: 1.15rem;
   color: #fff;
-  margin: 10px 0;
+  margin: 20px 15px 10px;
+  font-weight: 600;
+  line-height: 1.4;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.related-products-container .product .price {
-  font-size: 1.2rem;
+.related.products ul.products li.product .price,
+.upsells.products ul.products li.product .price {
+  font-size: 1.4rem;
   font-weight: 700;
   color: #53d68a;
-  margin: 10px 0;
+  margin: 15px 0;
+  padding: 0 15px;
 }
 
-.related-products-container .product .button {
-  background-color: #2a9d8f;
+.related.products ul.products li.product .price del,
+.upsells.products ul.products li.product .price del {
+  color: #999;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.related.products ul.products li.product .price ins,
+.upsells.products ul.products li.product .price ins {
+  text-decoration: none;
+  color: #53d68a;
+}
+
+.related.products ul.products li.product .button,
+.upsells.products ul.products li.product .button {
+  background: linear-gradient(135deg, #2a9d8f, #21867a);
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 12px 30px;
+  border-radius: 25px;
   text-decoration: none;
   display: inline-block;
-  margin-top: 10px;
+  margin: 20px 15px;
   transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(42, 157, 143, 0.3);
 }
 
-.related-products-container .product .button:hover {
-  background-color: #21867a;
+.related.products ul.products li.product .button:hover,
+.upsells.products ul.products li.product .button:hover {
+  background: linear-gradient(135deg, #21867a, #1a6b5f);
   transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(42, 157, 143, 0.5);
+}
+
+.related.products ul.products li.product .onsale,
+.upsells.products ul.products li.product .onsale {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #e63946, #c11c28);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  z-index: 10;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(230, 57, 70, 0.4);
+}
+
+/* ==========================================
+   WooCommerce Default Overrides
+   ========================================== */
+
+/* Remove default WooCommerce wrapper issues */
+.single-product .woocommerce-breadcrumb {
+  display: none; /* Esconde breadcrumb padrão */
+}
+
+.single-product div.product {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.single-product .woocommerce-notices-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Fix WooCommerce default image gallery */
+.single-product .woocommerce-product-gallery {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* Ensure proper text color in all WooCommerce elements */
+.single-product .woocommerce p,
+.single-product .woocommerce h1,
+.single-product .woocommerce h2,
+.single-product .woocommerce h3,
+.single-product .woocommerce label,
+.single-product .woocommerce .price {
+  color: inherit !important;
 }
 
 /* ==========================================

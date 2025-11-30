@@ -5,6 +5,7 @@
 get_header();
 ?>
 
+<?php if (!is_product()) : ?>
 <!-- BANNER DA LOJA -->
 <section class="main-hero shop-hero">
   <div class="hero-image-container">
@@ -18,9 +19,10 @@ get_header();
     </div>
   </div>
 </section>
+<?php endif; ?>
 
 <!-- CONTEÚDO DA LOJA -->
-<div class="woocommerce-container">
+<div class="woocommerce-container <?php echo is_product() ? 'single-product-container' : ''; ?>">
     <?php woocommerce_content(); ?>
 </div>
 

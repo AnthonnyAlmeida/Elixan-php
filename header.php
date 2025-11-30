@@ -197,27 +197,28 @@
   </nav>
 
   <select class="lang-select" id="languageSelect" aria-label="Language selector">
-    <option value="de">Deutsch</option>
-    <option value="en">English</option>
-    <option value="fr">Français</option>
-    <option value="it">Italiano</option>
-    <option value="es">Español</option>
-    <option value="pt">Português</option>
-    <option value="pl">Polski</option>
-    <option value="cs">Čeština</option>
-    <option value="hu">Magyar</option>
-    <option value="ro">Română</option>
-    <option value="bg">Български</option>
-    <option value="hr">Hrvatski</option>
-    <option value="sl">Slovenščina</option>
-    <option value="sk">Slovenčina</option>
-    <option value="el">Ελληνικά</option>
-    <option value="et">Eesti</option>
-    <option value="lv">Latviešu</option>
-    <option value="lt">Lietuvių</option>
-    <option value="mt">Malti</option>
-    <option value="fi">Suomi</option>
-    <option value="sv">Svenska</option>
-    <option value="no">Norsk</option>
+    <option value="de" data-country="🇨🇭 Schweiz (Deutsch)">🇨🇭</option>
+    <option value="de-DE" data-country="🇩🇪 Deutschland">🇩�</option>
+    <option value="en" data-country="�🇬🇧 United Kingdom">🇬🇧</option>
+    <option value="fr" data-country="🇫🇷 France">🇫🇷</option>
+    <option value="it" data-country="🇮🇹 Italia">🇮🇹</option>
+    <option value="es" data-country="🇪🇸 España">🇪🇸</option>
+    <option value="pt" data-country="🇵🇹 Portugal">🇵🇹</option>
+    <option value="pl" data-country="🇵🇱 Polska">🇵🇱</option>
+    <option value="cs" data-country="🇨🇿 Česko">🇨🇿</option>
+    <option value="hu" data-country="🇭🇺 Magyarország">🇭🇺</option>
+    <option value="ro" data-country="🇷🇴 România">🇷🇴</option>
+    <option value="bg" data-country="🇧🇬 България">🇧🇬</option>
+    <option value="hr" data-country="🇭🇷 Hrvatska">🇭🇷</option>
+    <option value="sl" data-country="🇸🇮 Slovenija">🇸🇮</option>
+    <option value="sk" data-country="🇸🇰 Slovensko">🇸🇰</option>
+    <option value="el" data-country="🇬🇷 Ελλάδα">🇬🇷</option>
+    <option value="et" data-country="🇪🇪 Eesti">🇪🇪</option>
+    <option value="lv" data-country="🇱🇻 Latvija">🇱🇻</option>
+    <option value="lt" data-country="🇱🇹 Lietuva">🇱🇹</option>
+    <option value="mt" data-country="🇲🇹 Malta">🇲🇹</option>
+    <option value="fi" data-country="🇫🇮 Suomi">🇫🇮</option>
+    <option value="sv" data-country="🇸🇪 Sverige">🇸🇪</option>
+    <option value="no" data-country="🇳🇴 Norge">🇳🇴</option>
   </select>
 </header>
