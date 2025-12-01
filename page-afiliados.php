@@ -11,7 +11,7 @@ get_header();
     <img src="<?php echo get_template_directory_uri(); ?>/assets/banner_elixan.png" alt="Elixan Affiliate Programm - Verdienen Sie mit uns" class="hero-image" loading="eager" width="1920" height="600" />
     <div class="hero-content">
       <h1 data-key="banner_title">Affiliate Programm</h1>
-      <button onclick="openModal()" data-key="banner_btn">Jetzt starten</button>
+      <button data-affiliate-modal data-key="banner_btn">Jetzt starten</button>
     </div>
   </div>
 </section>
@@ -65,17 +65,146 @@ get_header();
       <p data-key="step3_text">Erhalten Sie Provisionen für jeden Verkauf.</p>
     </div>
   </div>
-  <button onclick="openModal()" class="cta-button" data-key="steps_cta_btn">Jetzt starten</button>
+  <button data-affiliate-modal class="cta-button" data-key="steps_cta_btn">Jetzt starten</button>
 </section>
 
-<!-- MODAL -->
-<div id="signup-modal" class="modal hidden" style="display:none;">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">×</span>
-    <h2 data-key="modal_title">Anmelden</h2>
-    <input type="text" placeholder="Name" data-key="modal_name" />
-    <input type="email" placeholder="E-Mail" data-key="modal_email" />
-    <button data-key="modal_submit">Absenden</button>
+<!-- MODAL DE CADASTRO DE AFILIADO -->
+<div id="affiliate-modal" class="affiliate-modal">
+  <div class="affiliate-modal-content">
+    <button class="affiliate-modal-close" aria-label="Fechar">×</button>
+    
+    <div class="affiliate-modal-header">
+      <h2 data-key="affiliate_modal_title">Cadastro de Afiliado</h2>
+      <p data-key="affiliate_modal_subtitle">Preencha o formulário abaixo para se tornar um afiliado Elixan</p>
+    </div>
+    
+    <div id="affiliate-form-message" class="affiliate-form-message"></div>
+    
+    <form id="affiliate-registration-form">
+      <!-- Nome Completo -->
+      <div class="affiliate-form-group">
+        <label class="affiliate-form-label" for="affiliate-name">
+          <span data-key="affiliate_form_name">Nome Completo</span> <span class="required">*</span>
+        </label>
+        <input 
+          type="text" 
+          id="affiliate-name" 
+          class="affiliate-form-input" 
+          placeholder="Seu nome completo"
+          data-key-placeholder="affiliate_form_name_placeholder"
+          required 
+        />
+      </div>
+      
+      <!-- Email e Telefone -->
+      <div class="affiliate-form-row">
+        <div class="affiliate-form-group">
+          <label class="affiliate-form-label" for="affiliate-email">
+            <span data-key="affiliate_form_email">Email</span> <span class="required">*</span>
+          </label>
+          <input 
+            type="email" 
+            id="affiliate-email" 
+            class="affiliate-form-input" 
+            placeholder="seu@email.com"
+            required 
+          />
+        </div>
+        
+        <div class="affiliate-form-group">
+          <label class="affiliate-form-label" for="affiliate-phone">
+            <span data-key="affiliate_form_phone">Telefone</span>
+          </label>
+          <input 
+            type="tel" 
+            id="affiliate-phone" 
+            class="affiliate-form-input" 
+            placeholder="+41 XX XXX XX XX"
+          />
+        </div>
+      </div>
+      
+      <!-- País -->
+      <div class="affiliate-form-group">
+        <label class="affiliate-form-label" for="affiliate-country">
+          <span data-key="affiliate_form_country">País</span> <span class="required">*</span>
+        </label>
+        <select id="affiliate-country" class="affiliate-form-select" required>
+          <option value="">Selecione seu país</option>
+          <option value="Schweiz">🇨🇭 Schweiz (Suíça)</option>
+          <option value="Deutschland">🇩🇪 Deutschland (Alemanha)</option>
+          <option value="Österreich">🇦🇹 Österreich (Áustria)</option>
+          <option value="Frankreich">🇫🇷 Frankreich (França)</option>
+          <option value="Italien">🇮🇹 Italien (Itália)</option>
+          <option value="Spanien">🇪🇸 Spanien (Espanha)</option>
+          <option value="Portugal">🇵🇹 Portugal</option>
+          <option value="Polen">🇵🇱 Polen (Polônia)</option>
+          <option value="Tschechien">🇨🇿 Tschechien (República Tcheca)</option>
+          <option value="Ungarn">🇭🇺 Ungarn (Hungria)</option>
+          <option value="Rumänien">🇷🇴 Rumänien (Romênia)</option>
+          <option value="Bulgarien">🇧🇬 Bulgarien (Bulgária)</option>
+          <option value="Kroatien">🇭🇷 Kroatien (Croácia)</option>
+          <option value="Slowenien">🇸🇮 Slowenien (Eslovênia)</option>
+          <option value="Slowakei">🇸🇰 Slowakei (Eslováquia)</option>
+          <option value="Griechenland">🇬🇷 Griechenland (Grécia)</option>
+          <option value="Estland">🇪🇪 Estland (Estônia)</option>
+          <option value="Lettland">🇱🇻 Lettland (Letônia)</option>
+          <option value="Litauen">🇱🇹 Litauen (Lituânia)</option>
+          <option value="Malta">🇲🇹 Malta</option>
+          <option value="Finnland">🇫🇮 Finnland (Finlândia)</option>
+          <option value="Schweden">🇸🇪 Schweden (Suécia)</option>
+          <option value="Norwegen">🇳🇴 Norwegen (Noruega)</option>
+        </select>
+      </div>
+      
+      <!-- Email PayPal -->
+      <div class="affiliate-form-group">
+        <label class="affiliate-form-label" for="affiliate-paypal">
+          <span data-key="affiliate_form_paypal">Email do PayPal</span> <span class="required">*</span>
+        </label>
+        <input 
+          type="email" 
+          id="affiliate-paypal" 
+          class="affiliate-form-input" 
+          placeholder="seu@paypal.com"
+          data-key-placeholder="affiliate_form_paypal_placeholder"
+          required 
+        />
+        <small style="color: rgba(255,255,255,0.6); font-size: 12px; display: block; margin-top: 5px;" data-key="affiliate_form_paypal_help">
+          As comissões serão enviadas para este email via PayPal
+        </small>
+      </div>
+      
+      <!-- Como nos encontrou -->
+      <div class="affiliate-form-group">
+        <label class="affiliate-form-label" for="affiliate-how-found">
+          <span data-key="affiliate_form_how_found">Como conheceu a Elixan?</span>
+        </label>
+        <textarea 
+          id="affiliate-how-found" 
+          class="affiliate-form-textarea" 
+          placeholder="Conte-nos como descobriu a Elixan..."
+          data-key-placeholder="affiliate_form_how_found_placeholder"
+        ></textarea>
+      </div>
+      
+      <!-- Termos e Condições -->
+      <div class="affiliate-form-group">
+        <div class="affiliate-form-checkbox">
+          <input type="checkbox" id="affiliate-terms" required />
+          <label for="affiliate-terms">
+            <span data-key="affiliate_form_terms">
+              Li e concordo com os <a href="/termos-afiliados" target="_blank">Termos e Condições</a> do Programa de Afiliados
+            </span> <span class="required">*</span>
+          </label>
+        </div>
+      </div>
+      
+      <!-- Botão Submit -->
+      <button type="submit" class="affiliate-form-submit" data-key="affiliate_form_submit">
+        Cadastrar como Afiliado
+      </button>
+    </form>
   </div>
 </div>
 
