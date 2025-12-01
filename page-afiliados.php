@@ -167,21 +167,21 @@ get_header();
         </select>
       </div>
       
-      <!-- Email PayPal -->
+      <!-- Chave PIX -->
       <div class="affiliate-form-group">
-        <label class="affiliate-form-label" for="affiliate-paypal">
-          <span data-key="affiliate_form_paypal">Email do PayPal</span> <span class="required">*</span>
+        <label class="affiliate-form-label" for="affiliate-pix">
+          <span data-key="affiliate_form_pix">Chave PIX</span> <span class="required">*</span>
         </label>
         <input 
-          type="email" 
-          id="affiliate-paypal" 
+          type="text" 
+          id="affiliate-pix" 
           class="affiliate-form-input" 
-          placeholder="seu@paypal.com"
-          data-key-placeholder="affiliate_form_paypal_placeholder"
+          placeholder="email@example.com, CPF, telefone ou chave aleatória"
+          data-key-placeholder="affiliate_form_pix_placeholder"
           required 
         />
-        <small style="color: rgba(255,255,255,0.6); font-size: 12px; display: block; margin-top: 5px;" data-key="affiliate_form_paypal_help">
-          As comissões serão enviadas para este email via PayPal
+        <small style="color: rgba(255,255,255,0.6); font-size: 11px; display: block; margin-top: 4px;" data-key="affiliate_form_pix_help">
+          As comissões serão enviadas para esta chave PIX
         </small>
       </div>
       
