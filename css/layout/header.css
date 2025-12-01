@@ -115,7 +115,7 @@
    ========================== */
 .language-selector {
   position: relative;
-  z-index: 100;
+  z-index: 10000;
 }
 
 /* Botão Principal */
@@ -187,6 +187,7 @@
   transform: translateY(-10px);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  z-index: 10001;
 }
 
 .language-selector.open .language-selector__dropdown {
