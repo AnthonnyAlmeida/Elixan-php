@@ -117,6 +117,9 @@
 
   // Inicializa
   setInitialLanguage();
+  
+  // Garante que dropdown está fechado ao carregar
+  selector.classList.remove('open');
 
   console.log('✅ Language Selector carregado - Idioma atual: ' + currentLang.toUpperCase());
 

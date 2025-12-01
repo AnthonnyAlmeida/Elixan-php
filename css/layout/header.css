@@ -181,20 +181,24 @@
   border: 1px solid rgba(83, 214, 138, 0.15);
   border-radius: 12px;
   width: 280px;
-  max-height: 0;
+  max-height: 0 !important;
   overflow: hidden;
-  opacity: 0;
+  opacity: 0 !important;
+  visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
   z-index: 10001;
+  pointer-events: none;
 }
 
 .language-selector.open .language-selector__dropdown {
-  max-height: 450px;
-  opacity: 1;
+  max-height: 450px !important;
+  opacity: 1 !important;
+  visibility: visible;
   transform: translateY(0);
   overflow-y: auto;
+  pointer-events: all;
 }
 
 /* Search Box */
