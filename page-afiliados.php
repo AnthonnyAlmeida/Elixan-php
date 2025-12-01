@@ -2,6 +2,16 @@
 /*
 Template Name: Afiliados
 */
+
+// Carregar scripts do formulário de afiliados
+wp_enqueue_script('jquery');
+wp_enqueue_style('elixan-affiliate-form', plugins_url('elixan-affiliates/assets/css/affiliate-form.css'), [], '1.0.0');
+wp_enqueue_script('elixan-affiliate-form-js', plugins_url('elixan-affiliates/assets/js/affiliate-form.js'), ['jquery'], '1.0.0', true);
+wp_localize_script('elixan-affiliate-form-js', 'elixanAffiliateAjax', [
+    'ajaxurl' => admin_url('admin-ajax.php'),
+    'nonce' => wp_create_nonce('elixan_affiliate_register')
+]);
+
 get_header();
 ?>
 
@@ -207,5 +217,16 @@ get_header();
     </form>
   </div>
 </div>
+
+<!-- CSS e JS do Formulário de Afiliados -->
+<link rel="stylesheet" href="<?php echo plugins_url('elixan-affiliates/assets/css/affiliate-form.css'); ?>?v=<?php echo time(); ?>">
+<script>
+var elixanAffiliateAjax = {
+    ajaxurl: '<?php echo admin_url('admin-ajax.php'); ?>',
+    nonce: '<?php echo wp_create_nonce('elixan_affiliate_register'); ?>'
+};
+</script>
+<?php wp_enqueue_script('jquery'); wp_footer(); ?>
+<script src="<?php echo plugins_url('elixan-affiliates/assets/js/affiliate-form.js'); ?>?v=<?php echo time(); ?>"></script>
 
 <?php get_footer(); ?>
