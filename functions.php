@@ -32,6 +32,9 @@ function elixan_theme_scripts() {
     // Adiciona inline script para garantir THEME_PATH
     wp_add_inline_script('simple-translate', 'window.THEME_PATH = "' . get_template_directory_uri() . '";', 'before');
     
+    // Language Selector - Flag Toggle
+    wp_enqueue_script('language-selector', get_template_directory_uri() . '/js/language-selector.js', array(), '6.0.1', true);
+    
     // Menu Mobile (hambúrguer)
     wp_enqueue_script('menu-mobile', get_template_directory_uri() . '/js/menu-mobile.js', array(), '6.0.1', true);
     

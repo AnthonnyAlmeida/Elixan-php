@@ -260,6 +260,39 @@ function applyAllTranslations(t, lang) {
     el.dataset.wooLang = lang;
   });
 
+  // ========== 19. TEXTOS DIVERSOS (fallback genérico) ==========
+  // Pega qualquer texto que contenha palavras em inglês/português/etc
+  const textPatterns = {
+    'in stock': t.woo_in_stock,
+    'out of stock': t.woo_out_of_stock,
+    'add to cart': t.woo_add_to_cart,
+    'reviews': t.woo_reviews,
+    'your rating': t.woo_your_rating,
+    'your review': t.woo_your_review,
+    'submit': t.woo_submit,
+    'name': t.woo_name,
+    'email': t.woo_email,
+    'description': t.woo_description,
+    'additional information': t.woo_additional_info,
+    'uncategorized': t.woo_uncategorized,
+    'related products': t.woo_related_products,
+    'awaiting product image': t.woo_awaiting_image
+  };
+
+  // Varre todos os elementos de texto
+  document.querySelectorAll('p, span, div, label, button, a, h2, h3').forEach(el => {
+    if (el.dataset.wooLang === lang || el.querySelector('*')) return; // Skip se já traduzido ou tem filhos
+    
+    const text = el.textContent.toLowerCase().trim();
+    for (const [pattern, translation] of Object.entries(textPatterns)) {
+      if (text === pattern.toLowerCase()) {
+        el.textContent = translation;
+        el.dataset.wooLang = lang;
+        break;
+      }
+    }
+  });
+
   console.log('✅ WooCommerce traduzido para: ' + lang.toUpperCase());
 }
 

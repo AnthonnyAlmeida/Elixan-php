@@ -92,7 +92,7 @@
 
   // Também aplica quando a página carrega completamente
   window.addEventListener('load', () => {
-    const selector = document.getElementById('language-selector');
+    const selector = document.getElementById('languageSelect');
     if (selector) {
       const savedLang = localStorage.getItem('idioma') || 'de';
       selector.value = savedLang; // Re-aplica o valor salvo

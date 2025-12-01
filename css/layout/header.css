@@ -113,67 +113,57 @@
 /* ==========================
    Seletor de Idioma
    ========================== */
-/* Define o estilo do seletor de idioma - PROFISSIONAL */
+/* Define o estilo do seletor de idioma - DISCRETO E REFINADO */
 .lang-select {
-  background: linear-gradient(135deg, rgba(83, 214, 138, 0.15), rgba(42, 157, 143, 0.15));
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  background: rgba(83, 214, 138, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: #fff;
-  border: 2px solid rgba(83, 214, 138, 0.3);
-  border-radius: 12px;
-  padding: 10px 16px;
-  font-size: 15px;
-  font-weight: 600;
+  border: 1px solid rgba(83, 214, 138, 0.25);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 22px;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  min-width: 220px;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  min-width: 50px;
+  text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .lang-select:hover {
-  background: linear-gradient(135deg, rgba(83, 214, 138, 0.25), rgba(42, 157, 143, 0.25));
-  border-color: rgba(83, 214, 138, 0.5);
-  box-shadow: 0 6px 20px rgba(83, 214, 138, 0.3);
-  transform: translateY(-2px);
+  background: rgba(83, 214, 138, 0.15);
+  border-color: rgba(83, 214, 138, 0.4);
+  box-shadow: 0 3px 12px rgba(83, 214, 138, 0.2);
+  transform: translateY(-1px);
 }
 
 .lang-select:focus {
   outline: none;
-  border-color: #53d68a;
-  box-shadow: 0 0 0 3px rgba(83, 214, 138, 0.2);
+  border-color: rgba(83, 214, 138, 0.6);
+  box-shadow: 0 0 0 2px rgba(83, 214, 138, 0.15);
+  font-size: 14px;
+  text-align: left;
+  min-width: 200px;
+  padding: 8px 12px;
 }
 
 .lang-select option {
   background: #1a1a1a;
   color: #fff;
-  padding: 12px;
-  font-size: 15px;
+  padding: 10px 12px;
+  font-size: 14px;
   font-weight: 500;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .lang-select option:hover {
   background: #2a2a2a;
-}
-
-/* Show full country name in dropdown options */
-.lang-select option::before {
-  content: attr(data-country);
-}
-
-/* When select is not focused, show only the flag emoji (closed state) */
-.lang-select:not(:focus):not(:active) {
-  font-size: 28px;
-  min-width: 55px;
-  padding: 6px 10px;
-  text-align: center;
-}
-
-/* When focused/open, show full text in options */
-.lang-select:focus option,
-.lang-select:active option {
-  font-size: 15px;
+  color: #53d68a;
 }
 
 /* ==========================
