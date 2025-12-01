@@ -196,29 +196,49 @@
     <a href="<?php echo home_url('/afiliados'); ?>" data-translate="nav_affiliate">Partner</a>
   </nav>
 
-  <select class="lang-select" id="languageSelect" aria-label="Language selector">
-    <option value="de" data-country="🇨🇭 Schweiz (Deutsch)">🇨🇭</option>
-    <option value="de-DE" data-country="🇩🇪 Deutschland">🇩�</option>
-    <option value="en" data-country="�🇬🇧 United Kingdom">🇬🇧</option>
-    <option value="fr" data-country="🇫🇷 France">🇫🇷</option>
-    <option value="it" data-country="🇮🇹 Italia">🇮🇹</option>
-    <option value="es" data-country="🇪🇸 España">🇪🇸</option>
-    <option value="pt" data-country="🇵🇹 Portugal">🇵🇹</option>
-    <option value="pl" data-country="🇵🇱 Polska">🇵🇱</option>
-    <option value="cs" data-country="🇨🇿 Česko">🇨🇿</option>
-    <option value="hu" data-country="🇭🇺 Magyarország">🇭🇺</option>
-    <option value="ro" data-country="🇷🇴 România">🇷🇴</option>
-    <option value="bg" data-country="🇧🇬 България">🇧🇬</option>
-    <option value="hr" data-country="🇭🇷 Hrvatska">🇭🇷</option>
-    <option value="sl" data-country="🇸🇮 Slovenija">🇸🇮</option>
-    <option value="sk" data-country="🇸🇰 Slovensko">🇸🇰</option>
-    <option value="el" data-country="🇬🇷 Ελλάδα">🇬🇷</option>
-    <option value="et" data-country="🇪🇪 Eesti">🇪🇪</option>
-    <option value="lv" data-country="🇱🇻 Latvija">🇱🇻</option>
-    <option value="lt" data-country="🇱🇹 Lietuva">🇱🇹</option>
-    <option value="mt" data-country="🇲🇹 Malta">🇲🇹</option>
-    <option value="fi" data-country="🇫🇮 Suomi">🇫🇮</option>
-    <option value="sv" data-country="🇸🇪 Sverige">🇸🇪</option>
-    <option value="no" data-country="🇳🇴 Norge">🇳🇴</option>
-  </select>
-</header>
+  <!-- Language Selector - Corporate Premium Style -->
+  <div class="language-selector" id="languageSelector">
+    <button class="language-selector__button" id="currentLanguage" aria-label="Select language" type="button">
+      <span class="language-selector__flag">🇨🇭</span>
+      <span class="language-selector__name">Deutsch</span>
+      <svg class="language-selector__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+        <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    
+    <div class="language-selector__dropdown" id="languageDropdown">
+      <div class="language-selector__search">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M11 11L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input type="text" placeholder="Search..." id="languageSearch">
+      </div>
+      <ul class="language-selector__list">
+        <li data-lang="de" data-flag="🇨🇭" data-name="Deutsch"><span class="flag">🇨🇭</span><span class="name">Schweiz</span></li>
+        <li data-lang="de-DE" data-flag="🇩🇪" data-name="Deutsch"><span class="flag">🇩🇪</span><span class="name">Deutschland</span></li>
+        <li data-lang="en" data-flag="🇬🇧" data-name="English"><span class="flag">🇬🇧</span><span class="name">United Kingdom</span></li>
+        <li data-lang="fr" data-flag="🇫🇷" data-name="Français"><span class="flag">🇫🇷</span><span class="name">France</span></li>
+        <li data-lang="it" data-flag="🇮🇹" data-name="Italiano"><span class="flag">🇮🇹</span><span class="name">Italia</span></li>
+        <li data-lang="es" data-flag="🇪🇸" data-name="Español"><span class="flag">🇪🇸</span><span class="name">España</span></li>
+        <li data-lang="pt" data-flag="🇵🇹" data-name="Português"><span class="flag">🇵🇹</span><span class="name">Portugal</span></li>
+        <li data-lang="pl" data-flag="🇵🇱" data-name="Polski"><span class="flag">🇵🇱</span><span class="name">Polska</span></li>
+        <li data-lang="cs" data-flag="🇨🇿" data-name="Čeština"><span class="flag">🇨🇿</span><span class="name">Česko</span></li>
+        <li data-lang="hu" data-flag="🇭🇺" data-name="Magyar"><span class="flag">🇭🇺</span><span class="name">Magyarország</span></li>
+        <li data-lang="ro" data-flag="🇷🇴" data-name="Română"><span class="flag">🇷🇴</span><span class="name">România</span></li>
+        <li data-lang="bg" data-flag="🇧🇬" data-name="Български"><span class="flag">🇧🇬</span><span class="name">България</span></li>
+        <li data-lang="hr" data-flag="🇭🇷" data-name="Hrvatski"><span class="flag">🇭🇷</span><span class="name">Hrvatska</span></li>
+        <li data-lang="sl" data-flag="🇸🇮" data-name="Slovenščina"><span class="flag">🇸🇮</span><span class="name">Slovenija</span></li>
+        <li data-lang="sk" data-flag="🇸🇰" data-name="Slovenčina"><span class="flag">🇸🇰</span><span class="name">Slovensko</span></li>
+        <li data-lang="el" data-flag="🇬🇷" data-name="Ελληνικά"><span class="flag">🇬🇷</span><span class="name">Ελλάδα</span></li>
+        <li data-lang="et" data-flag="🇪🇪" data-name="Eesti"><span class="flag">🇪🇪</span><span class="name">Eesti</span></li>
+        <li data-lang="lv" data-flag="🇱🇻" data-name="Latviešu"><span class="flag">🇱🇻</span><span class="name">Latvija</span></li>
+        <li data-lang="lt" data-flag="🇱🇹" data-name="Lietuvių"><span class="flag">🇱🇹</span><span class="name">Lietuva</span></li>
+        <li data-lang="mt" data-flag="🇲🇹" data-name="Malti"><span class="flag">🇲🇹</span><span class="name">Malta</span></li>
+        <li data-lang="fi" data-flag="🇫🇮" data-name="Suomi"><span class="flag">🇫🇮</span><span class="name">Suomi</span></li>
+        <li data-lang="sv" data-flag="🇸🇪" data-name="Svenska"><span class="flag">🇸🇪</span><span class="name">Sverige</span></li>
+        <li data-lang="no" data-flag="🇳🇴" data-name="Norsk"><span class="flag">🇳🇴</span><span class="name">Norge</span></li>
+      </ul>
+    </div>
+  </div>
+
