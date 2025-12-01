@@ -220,13 +220,17 @@ get_header();
 
 <!-- CSS e JS do Formulário de Afiliados -->
 <link rel="stylesheet" href="<?php echo plugins_url('elixan-affiliates/assets/css/affiliate-form.css'); ?>?v=<?php echo time(); ?>">
+
+<?php get_footer(); ?>
+
+<!-- jQuery (necessário para o formulário) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<!-- Scripts do Formulário -->
 <script>
 var elixanAffiliateAjax = {
     ajaxurl: '<?php echo admin_url('admin-ajax.php'); ?>',
     nonce: '<?php echo wp_create_nonce('elixan_affiliate_register'); ?>'
 };
 </script>
-<?php wp_enqueue_script('jquery'); wp_footer(); ?>
 <script src="<?php echo plugins_url('elixan-affiliates/assets/js/affiliate-form.js'); ?>?v=<?php echo time(); ?>"></script>
-
-<?php get_footer(); ?>
