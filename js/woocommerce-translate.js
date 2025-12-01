@@ -298,6 +298,7 @@ function applyAllTranslations(t, lang) {
 
 // Executa tradução quando a página carrega
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('🌐 WooCommerce Translate: DOM pronto, aguardando 500ms...');
   setTimeout(translateWooCommerce, 500);
 });
 
@@ -309,3 +310,9 @@ window.addEventListener('languageChanged', function() {
   });
   setTimeout(translateWooCommerce, 100);
 });
+
+// Tradução inicial adicional (backup)
+if (document.readyState === 'complete') {
+  console.log('📄 Página já carregada, executando tradução imediata');
+  setTimeout(translateWooCommerce, 100);
+}
