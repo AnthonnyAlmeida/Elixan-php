@@ -200,7 +200,7 @@
   <div class="language-selector" id="languageSelector">
     <button class="language-selector__button" id="currentLanguage" aria-label="Select language" type="button">
       <span class="language-selector__flag">🇨🇭</span>
-      <span class="language-selector__name">Deutsch</span>
+      <span class="language-selector__name">Schweiz</span>
       <svg class="language-selector__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
         <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
