@@ -16,12 +16,12 @@ function elixan_theme_scripts() {
     }
     
     // Single Product CSS (página individual de produto)
-    if (is_product()) {
+    if (function_exists('is_product') && is_product()) {
         wp_enqueue_style('single-product-css', get_template_directory_uri() . '/css/pages/single-product.css', array('elixan-style'), '6.0.1');
     }
     
     // WooCommerce Translation (páginas de produtos)
-    if (class_exists('WooCommerce') && (is_product() || is_shop() || is_product_category() || is_product_tag())) {
+    if (class_exists('WooCommerce') && function_exists('is_product') && (is_product() || is_shop() || is_product_category() || is_product_tag())) {
         wp_enqueue_script('woocommerce-translate', get_template_directory_uri() . '/js/woocommerce-translate.js', array('simple-translate'), '6.0.1', true);
     }
     

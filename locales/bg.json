@@ -146,5 +146,13 @@
   "woo_rate": "Оценете…",
   "woo_submit": "Изпрати",
   "woo_awaiting_image": "Изображение на продукта скоро",
-  "woo_uncategorized": "Без категория"
+  "woo_uncategorized": "Без категория",
+  "footer_legal_title": "Правна информация",
+  "footer_link_impressum": "Impressum",
+  "footer_link_privacy": "Поверителност",
+  "footer_link_terms": "Общи условия",
+  "footer_link_cancellation": "Право на отказ",
+  "footer_link_cookies": "Политика за бисквитки",
+  "footer_company_name": "Elixan Aromatica GmbH",
+  "footer_legal_note": "UID: CHE-115.830.962 | Търговски регистър №: CH-320.4.046.940-9"
 }

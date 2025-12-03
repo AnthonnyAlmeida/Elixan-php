@@ -146,5 +146,13 @@
   "woo_rate": "Vurder…",
   "woo_submit": "Send inn",
   "woo_awaiting_image": "Produktbilde kommer snart",
-  "woo_uncategorized": "Ukategorisert"
+  "woo_uncategorized": "Ukategorisert",
+  "footer_legal_title": "Juridisk informasjon",
+  "footer_link_impressum": "Impressum",
+  "footer_link_privacy": "Personvern",
+  "footer_link_terms": "Vilkår og betingelser",
+  "footer_link_cancellation": "Angrerett",
+  "footer_link_cookies": "Informasjonskapsler",
+  "footer_company_name": "Elixan Aromatica GmbH",
+  "footer_legal_note": "UID: CHE-115.830.962 | Org.nr: CH-320.4.046.940-9"
 }

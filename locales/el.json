@@ -146,5 +146,13 @@
   "woo_rate": "Αξιολογήστε…",
   "woo_submit": "Υποβολή",
   "woo_awaiting_image": "Εικόνα προϊόντος σύντομα",
-  "woo_uncategorized": "Χωρίς κατηγορία"
+  "woo_uncategorized": "Χωρίς κατηγορία",
+  "footer_legal_title": "Νομικές πληροφορίες",
+  "footer_link_impressum": "Impressum",
+  "footer_link_privacy": "Απόρρητο",
+  "footer_link_terms": "Όροι και Προϋποθέσεις",
+  "footer_link_cancellation": "Δικαίωμα Ανάκλησης",
+  "footer_link_cookies": "Πολιτική Cookies",
+  "footer_company_name": "Elixan Aromatica GmbH",
+  "footer_legal_note": "UID: CHE-115.830.962 | Αρ. Εμπορικού Μητρώου: CH-320.4.046.940-9"
 }

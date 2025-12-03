@@ -146,5 +146,13 @@
   "woo_rate": "Hinda…",
   "woo_submit": "Saada",
   "woo_awaiting_image": "Toote pilt varsti",
-  "woo_uncategorized": "Kategoriseerimata"
+  "woo_uncategorized": "Kategoriseerimata",
+  "footer_legal_title": "Juriidiline teave",
+  "footer_link_impressum": "Impressum",
+  "footer_link_privacy": "Privaatsus",
+  "footer_link_terms": "Tingimused",
+  "footer_link_cancellation": "Tagastusõigus",
+  "footer_link_cookies": "Küpsiste poliitika",
+  "footer_company_name": "Elixan Aromatica GmbH",
+  "footer_legal_note": "UID: CHE-115.830.962 | Äriregistri nr: CH-320.4.046.940-9"
 }

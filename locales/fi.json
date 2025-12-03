@@ -146,5 +146,13 @@
   "woo_rate": "Arvioi…",
   "woo_submit": "Lähetä",
   "woo_awaiting_image": "Tuotekuva tulossa pian",
-  "woo_uncategorized": "Luokittelematon"
+  "woo_uncategorized": "Luokittelematon",
+  "footer_legal_title": "Lakiasiat",
+  "footer_link_impressum": "Impressum",
+  "footer_link_privacy": "Tietosuoja",
+  "footer_link_terms": "Käyttöehdot",
+  "footer_link_cancellation": "Peruutusoikeus",
+  "footer_link_cookies": "Evästekäytäntö",
+  "footer_company_name": "Elixan Aromatica GmbH",
+  "footer_legal_note": "UID: CHE-115.830.962 | Kaupparekisterinumero: CH-320.4.046.940-9"
 }

@@ -146,5 +146,13 @@
   "woo_rate": "Értékeld…",
   "woo_submit": "Küldés",
   "woo_awaiting_image": "Termék kép hamarosan",
-  "woo_uncategorized": "Kategória nélkül"
+  "woo_uncategorized": "Kategória nélkül",
+  "footer_legal_title": "Jogi információk",
+  "footer_link_impressum": "Impresszum",
+  "footer_link_privacy": "Adatvédelem",
+  "footer_link_terms": "Általános Szerződési Feltételek",
+  "footer_link_cancellation": "Elállási jog",
+  "footer_link_cookies": "Cookie szabályzat",
+  "footer_company_name": "Elixan Aromatica GmbH",
+  "footer_legal_note": "UID: CHE-115.830.962 | Cégjegyzékszám: CH-320.4.046.940-9"
 }

@@ -146,5 +146,13 @@
   "woo_rate": "Įvertinti…",
   "woo_submit": "Pateikti",
   "woo_awaiting_image": "Produkto vaizdas netrukus",
-  "woo_uncategorized": "Nekategorizuotas"
+  "woo_uncategorized": "Nekategorizuotas",
+  "footer_legal_title": "Teisinė informacija",
+  "footer_link_impressum": "Impressum",
+  "footer_link_privacy": "Privatumas",
+  "footer_link_terms": "Naudojimo sąlygos",
+  "footer_link_cancellation": "Atsisakymo teisė",
+  "footer_link_cookies": "Slapukų politika",
+  "footer_company_name": "Elixan Aromatica GmbH",
+  "footer_legal_note": "UID: CHE-115.830.962 | Įmonių registro nr.: CH-320.4.046.940-9"
 }

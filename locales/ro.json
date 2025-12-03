@@ -146,5 +146,13 @@
   "woo_rate": "Evaluează…",
   "woo_submit": "Trimite",
   "woo_awaiting_image": "Imagine produs în curând",
-  "woo_uncategorized": "Fără categorie"
+  "woo_uncategorized": "Fără categorie",
+  "footer_legal_title": "Informații legale",
+  "footer_link_impressum": "Impressum",
+  "footer_link_privacy": "Confidențialitate",
+  "footer_link_terms": "Termeni și condiții",
+  "footer_link_cancellation": "Drept de retragere",
+  "footer_link_cookies": "Politica de cookies",
+  "footer_company_name": "Elixan Aromatica GmbH",
+  "footer_legal_note": "UID: CHE-115.830.962 | Nr. Registrul Comerțului: CH-320.4.046.940-9"
 }

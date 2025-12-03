@@ -146,5 +146,13 @@
   "woo_rate": "Valuta…",
   "woo_submit": "Invia",
   "woo_awaiting_image": "Immagine del prodotto in arrivo",
-  "woo_uncategorized": "Senza categoria"
+  "woo_uncategorized": "Senza categoria",
+  "footer_legal_title": "Informazioni Legali",
+  "footer_link_impressum": "Note Legali",
+  "footer_link_privacy": "Privacy",
+  "footer_link_terms": "Termini e Condizioni",
+  "footer_link_cancellation": "Diritto di Recesso",
+  "footer_link_cookies": "Cookie Policy",
+  "footer_company_name": "Elixan Aromatica GmbH",
+  "footer_legal_note": "UID: CHE-115.830.962 | N° Registro di Commercio: CH-320.4.046.940-9"
 }

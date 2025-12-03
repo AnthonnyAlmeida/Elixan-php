@@ -146,5 +146,13 @@
   "woo_rate": "Valuta…",
   "woo_submit": "Ibgħat",
   "woo_awaiting_image": "Immaġni tal-prodott dalwaqt",
-  "woo_uncategorized": "Mhux kategorizzat"
+  "woo_uncategorized": "Mhux kategorizzat",
+  "footer_legal_title": "Informazzjoni Legali",
+  "footer_link_impressum": "Impressum",
+  "footer_link_privacy": "Privatezza",
+  "footer_link_terms": "Termini u Kundizzjonijiet",
+  "footer_link_cancellation": "Dritt ta' Ċaħda",
+  "footer_link_cookies": "Politika tal-Cookies",
+  "footer_company_name": "Elixan Aromatica GmbH",
+  "footer_legal_note": "UID: CHE-115.830.962 | Nru tar-Reġistru Kummerċjali: CH-320.4.046.940-9"
 }
